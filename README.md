@@ -1,12 +1,12 @@
 # 🚗 Vehicle Price Estimator (Machine Learning)
 
-A production-style machine learning application that estimates the market value of used vehicles based on real-world data.
+A production-ready machine learning application that estimates the market value of used vehicles using real-world data and predictive modeling.
 
 ---
 
 ## 🚀 Live Demo
 
-👉 (pega aquí tu link de Streamlit cuando deployes)
+👉 https://TU_LINK_STREAMLIT
 
 ---
 
@@ -14,11 +14,11 @@ A production-style machine learning application that estimates the market value 
 
 Estimating the price of used vehicles is a complex regression problem due to:
 
-- High variability in vehicle conditions
-- Market-driven pricing dynamics
-- Heterogeneous features (categorical + numerical)
+- High variability in vehicle conditions  
+- Market-driven pricing dynamics  
+- Mixed feature types (categorical + numerical)  
 
-This project simulates a real-world pricing engine similar to platforms like Kavak, Kelley Blue Book, or Carvana.
+This project simulates a real-world pricing engine similar to platforms like **Kavak, Kelley Blue Book, and Carvana**.
 
 ---
 
@@ -26,36 +26,38 @@ This project simulates a real-world pricing engine similar to platforms like Kav
 
 Developed an end-to-end machine learning pipeline that:
 
-- Cleans and filters noisy real-world data
-- Encodes categorical variables efficiently
-- Trains a regression model for price prediction
-- Provides real-time predictions through a web application
+- Cleans and filters noisy real-world data  
+- Handles missing values and outliers  
+- Encodes categorical variables efficiently  
+- Trains a regression model for price prediction  
+- Delivers real-time predictions through an interactive web application  
 
 ---
 
 ## 🤖 Model
 
-- Algorithm: Random Forest Regressor  
-- Feature engineering + categorical encoding  
-- Outlier filtering for price stability  
+- Algorithm: **Random Forest Regressor**  
+- Feature engineering and categorical encoding  
+- Outlier filtering for improved stability  
 
 ---
 
 ## 📈 Performance
 
-- Mean Absolute Error (MAE): ~$3000  
+- Mean Absolute Error (MAE): **~$3,000 USD**
 
-This level of error is acceptable given the variability in used vehicle pricing.
+This level of error is considered acceptable given the variability and uncertainty in used vehicle markets.
 
 ---
 
-## 💼 Business Perspective
+## 💼 Business Impact
 
-The system enables:
+This system enables:
 
-- Fast vehicle valuation
-- Price benchmarking for sellers
-- Decision support for buyers and marketplaces
+- Fast and scalable vehicle valuation  
+- Price benchmarking for sellers  
+- Decision support for buyers and marketplaces  
+- Foundation for real-world pricing engines in automotive platforms  
 
 ---
 
@@ -71,5 +73,4 @@ streamlit run app.py
 🧑‍💻 Author
 
 Luis Enrique Camargo
-
 Data Scientist | Machine Learning Engineer
