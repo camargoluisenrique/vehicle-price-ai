@@ -8,17 +8,12 @@ from model import train_model, predict
 st.set_page_config(page_title="Vehicle Price Estimator", layout="centered")
 
 # =========================
-# CUSTOM CSS (PRO UI)
+# CUSTOM CSS
 # =========================
 st.markdown("""
 <style>
 body {
     font-family: 'Inter', sans-serif;
-}
-
-h1, h2, h3 {
-    font-weight: 600;
-    letter-spacing: -0.3px;
 }
 
 .block-container {
@@ -52,20 +47,10 @@ div[data-testid="stMetric"] {
 # =========================
 @st.cache_resource
 def load_all():
-    df = pd.read_csv("data/vehicles.csv")
+    df = pd.read_csv("data/sample_data.csv")
 
-    df = df.drop(columns=[
-        'id','url','region','region_url','VIN','image_url',
-        'description','county','state','lat','long','posting_date'
-    ], errors="ignore")
-
-    df = df.dropna(subset=[
-        'price','year','manufacturer','condition','fuel',
-        'odometer','transmission','type','paint_color'
-    ])
-
-    df = df[(df["price"] > 500) & (df["price"] < 100000)]
-    df = df.drop(columns=["model"], errors="ignore")
+    # limpiar (igual que modelo)
+    df = df.dropna()
 
     mappings = {}
     for col in df.select_dtypes(include="object").columns:
@@ -77,6 +62,9 @@ def load_all():
 
     return model, X_test, mappings
 
+# =========================
+# LOADING UX
+# =========================
 placeholder = st.empty()
 
 with placeholder.container():
@@ -97,7 +85,7 @@ st.caption("Real-time valuation for used vehicles based on market data")
 st.divider()
 
 # =========================
-# INPUT SECTION
+# INPUT
 # =========================
 st.subheader("Vehicle Details")
 
@@ -149,7 +137,6 @@ if st.button("Calculate Vehicle Value"):
     st.markdown("### Valuation Result")
 
     st.metric("Estimated Price", f"${price:,.0f}")
-
     st.progress(min(price / 50000, 1.0))
 
     st.markdown("### Market Insight")
