@@ -64,3 +64,11 @@ The system enables:
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+```
+
+---
+
+🧑‍💻 Author
+
+Luis Enrique Camargo
+Data Scientist | Machine Learning Engineer
