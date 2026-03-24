@@ -1,0 +1,10 @@
+venv/
+ds_env/
+__pycache__/
+*.pyc
+*.pkl
+.env
+
+data/archive/
+*.zip
+data/vehicles.csv
