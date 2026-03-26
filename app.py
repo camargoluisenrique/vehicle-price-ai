@@ -8,7 +8,7 @@ from model import train_model, predict
 st.set_page_config(page_title="Vehicle Price Estimator", layout="centered")
 
 # =========================
-# CUSTOM CSS
+# STYLE
 # =========================
 st.markdown("""
 <style>
@@ -23,47 +23,30 @@ body {
 
 .stButton>button {
     background-color: #2563eb;
-    color: white;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-weight: 500;
-    border: none;
+    color: white !important;
 }
 
 .stButton>button:hover {
     background-color: #1d4ed8;
 }
 
-div[data-testid="stMetric"] {
-    background-color: #111827;
-    padding: 20px;
-    border-radius: 12px;
-}
 </style>
 """, unsafe_allow_html=True)
 
 # =========================
-# LOAD MODEL + DATA
+# LOAD DATA + MODEL
 # =========================
 @st.cache_resource
 def load_all():
     df = pd.read_csv("data/sample_data.csv")
-
-    # limpiar (igual que modelo)
     df = df.dropna()
-
-    mappings = {}
-    for col in df.select_dtypes(include="object").columns:
-        df[col] = df[col].astype("category")
-        mappings[col] = dict(enumerate(df[col].cat.categories))
-        df[col] = df[col].cat.codes
 
     model, X_test, _ = train_model()
 
-    return model, X_test, mappings
+    return df, model, X_test
 
 # =========================
-# LOADING UX
+# LOADING UX (PLACEHOLDER)
 # =========================
 placeholder = st.empty()
 
@@ -72,7 +55,7 @@ with placeholder.container():
     st.caption("Loading model and preparing data...")
     st.progress(50)
 
-model, X_test, mappings = load_all()
+df, model, X_test = load_all()
 
 placeholder.empty()
 
@@ -96,34 +79,32 @@ with col1:
     odometer = st.number_input("Mileage (km)", 0, 300000, 50000)
 
 with col2:
-    manufacturer = st.selectbox("Manufacturer", list(mappings["manufacturer"].values()))
-    fuel = st.selectbox("Fuel Type", list(mappings["fuel"].values()))
+    manufacturer = st.selectbox("Manufacturer", sorted(df["manufacturer"].unique()))
+    fuel = st.selectbox("Fuel Type", sorted(df["fuel"].unique()))
 
-condition = st.selectbox("Condition", list(mappings["condition"].values()))
-transmission = st.selectbox("Transmission", list(mappings["transmission"].values()))
-vehicle_type = st.selectbox("Vehicle Type", list(mappings["type"].values()))
-paint_color = st.selectbox("Color", list(mappings["paint_color"].values()))
-
-# =========================
-# ENCODER
-# =========================
-def encode_value(col, value):
-    reverse_map = {v: k for k, v in mappings[col].items()}
-    return reverse_map[value]
+condition = st.selectbox("Condition", sorted(df["condition"].unique()))
+transmission = st.selectbox("Transmission", sorted(df["transmission"].unique()))
+vehicle_type = st.selectbox("Vehicle Type", sorted(df["type"].unique()))
+paint_color = st.selectbox("Color", sorted(df["paint_color"].unique()))
 
 # =========================
-# SAMPLE INPUT
+# ENCODING (CONSISTENTE CON MODELO)
 # =========================
+def encode(df, col, value):
+    categories = df[col].astype("category").cat.categories
+    mapping = dict(zip(categories, range(len(categories))))
+    return mapping[value]
+
 sample = X_test.iloc[0].copy()
 
 sample["year"] = year
 sample["odometer"] = odometer
-sample["manufacturer"] = encode_value("manufacturer", manufacturer)
-sample["fuel"] = encode_value("fuel", fuel)
-sample["condition"] = encode_value("condition", condition)
-sample["transmission"] = encode_value("transmission", transmission)
-sample["type"] = encode_value("type", vehicle_type)
-sample["paint_color"] = encode_value("paint_color", paint_color)
+sample["manufacturer"] = encode(df, "manufacturer", manufacturer)
+sample["fuel"] = encode(df, "fuel", fuel)
+sample["condition"] = encode(df, "condition", condition)
+sample["transmission"] = encode(df, "transmission", transmission)
+sample["type"] = encode(df, "type", vehicle_type)
+sample["paint_color"] = encode(df, "paint_color", paint_color)
 
 # =========================
 # PREDICT

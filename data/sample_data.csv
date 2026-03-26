@@ -1,211 +1,104 @@
-<<<<<<< HEAD
-price,year,manufacturer,condition,cylinders,fuel,odometer,title_status,transmission,drive,size,type,paint_color
-11000,2010.0,chevrolet,good,8 cylinders,gas,188338.0,clean,automatic,4wd,full-size,truck,silver
-13700,2014.0,ford,like new,4 cylinders,gas,34000.0,clean,automatic,fwd,mid-size,SUV,red
-2800,2001.0,ford,good,4 cylinders,gas,139000.0,clean,automatic,fwd,mid-size,sedan,black
-13500,1999.0,bmw,like new,6 cylinders,gas,7100.0,clean,automatic,rwd,sub-compact,convertible,blue
-13950,2013.0,honda,excellent,4 cylinders,gas,107326.0,clean,automatic,4wd,mid-size,SUV,red
-8500,2011.0,chevrolet,excellent,6 cylinders,gas,179000.0,clean,automatic,4wd,mid-size,SUV,black
-7000,2013.0,toyota,excellent,4 cylinders,hybrid,156840.0,clean,automatic,fwd,mid-size,hatchback,silver
-5000,2005.0,ford,good,8 cylinders,diesel,214229.0,clean,automatic,rwd,full-size,other,white
-75850,2020.0,ford,excellent,8 cylinders,diesel,47205.0,clean,automatic,4wd,full-size,pickup,white
-17999,2008.0,mercedes-benz,excellent,8 cylinders,gas,108000.0,clean,automatic,rwd,full-size,coupe,black
-11950,2012.0,acura,excellent,6 cylinders,gas,160000.0,clean,automatic,4wd,mid-size,SUV,black
-14489,2006.0,toyota,excellent,8 cylinders,gas,149786.0,clean,automatic,4wd,full-size,pickup,white
-14000,2013.0,audi,excellent,4 cylinders,gas,106800.0,clean,automatic,4wd,mid-size,sedan,silver
-2950,1996.0,ford,good,6 cylinders,gas,218822.0,clean,automatic,rwd,mid-size,SUV,red
-3500,2001.0,jeep,fair,6 cylinders,gas,213000.0,clean,automatic,4wd,mid-size,SUV,red
-11900,2015.0,nissan,excellent,4 cylinders,gas,149894.0,clean,automatic,4wd,mid-size,SUV,grey
-9795,2008.0,mercedes-benz,excellent,8 cylinders,gas,166526.0,clean,automatic,4wd,full-size,SUV,silver
-3500,2003.0,chevrolet,fair,8 cylinders,gas,225000.0,clean,automatic,rwd,full-size,truck,white
-3500,2002.0,gmc,excellent,6 cylinders,gas,236032.0,clean,automatic,rwd,full-size,SUV,silver
-12200,2010.0,ram,good,8 cylinders,gas,224000.0,clean,automatic,4wd,full-size,truck,blue
-4995,2008.0,volvo,good,6 cylinders,gas,209559.0,clean,automatic,4wd,mid-size,SUV,black
-12495,2014.0,acura,good,6 cylinders,gas,145769.0,clean,automatic,4wd,full-size,SUV,black
-18995,2012.0,jaguar,excellent,8 cylinders,gas,87964.0,clean,automatic,rwd,full-size,sedan,green
-58500,2019.0,ford,like new,6 cylinders,gas,21980.0,lien,automatic,4wd,full-size,SUV,black
-4100,2006.0,toyota,like new,6 cylinders,hybrid,199000.0,clean,automatic,4wd,mid-size,SUV,blue
-12700,2004.0,jeep,excellent,4 cylinders,gas,106021.0,clean,manual,4wd,mid-size,offroad,black
-2800,2003.0,volkswagen,good,4 cylinders,gas,127000.0,clean,manual,fwd,compact,hatchback,green
-8650,2004.0,chevrolet,good,8 cylinders,gas,245830.0,clean,automatic,rwd,full-size,truck,white
-12000,2016.0,dodge,excellent,6 cylinders,gas,99500.0,clean,automatic,fwd,mid-size,SUV,grey
-13950,2014.0,honda,excellent,6 cylinders,gas,161203.0,clean,automatic,fwd,full-size,mini-van,grey
-20888,2015.0,mercedes-benz,excellent,6 cylinders,gas,111261.0,clean,automatic,4wd,full-size,SUV,silver
-8995,2015.0,chevrolet,excellent,4 cylinders,gas,100962.0,clean,automatic,fwd,compact,sedan,white
-6700,2008.0,bmw,excellent,6 cylinders,gas,153251.0,clean,automatic,4wd,full-size,SUV,silver
-8900,2004.0,chevrolet,excellent,5 cylinders,gas,153300.0,clean,automatic,4wd,mid-size,pickup,red
-10950,2012.0,jeep,good,6 cylinders,gas,107000.0,clean,automatic,4wd,full-size,SUV,green
-2995,2002.0,saturn,good,4 cylinders,gas,136000.0,clean,automatic,fwd,compact,sedan,red
-6495,2006.0,ford,new,8 cylinders,gas,167000.0,clean,automatic,4wd,full-size,SUV,brown
-1500,2006.0,jeep,good,6 cylinders,gas,186410.0,clean,automatic,4wd,full-size,SUV,black
-16999,2011.0,toyota,good,8 cylinders,gas,121000.0,lien,automatic,rwd,full-size,truck,silver
-9250,2011.0,acura,excellent,6 cylinders,gas,130000.0,clean,automatic,fwd,full-size,sedan,black
-9900,2007.0,chevrolet,fair,8 cylinders,diesel,270000.0,clean,automatic,4wd,full-size,pickup,black
-8900,2004.0,ram,good,8 cylinders,gas,158447.0,clean,automatic,4wd,full-size,truck,red
-2500,2000.0,toyota,fair,6 cylinders,gas,215000.0,clean,automatic,4wd,mid-size,SUV,silver
-2995,2006.0,saturn,excellent,4 cylinders,gas,133000.0,clean,manual,fwd,compact,sedan,red
-12500,2013.0,subaru,excellent,4 cylinders,gas,75121.0,clean,automatic,4wd,full-size,SUV,red
-21999,2006.0,lexus,excellent,8 cylinders,gas,80435.0,clean,automatic,rwd,sub-compact,convertible,grey
-14995,2011.0,chevrolet,excellent,8 cylinders,gas,137950.0,clean,automatic,4wd,full-size,truck,grey
-23999,2012.0,ford,excellent,6 cylinders,gas,99300.0,clean,automatic,4wd,full-size,truck,red
-12995,2017.0,volkswagen,excellent,4 cylinders,gas,110971.0,clean,automatic,fwd,full-size,sedan,grey
-9300,2010.0,acura,excellent,6 cylinders,gas,119000.0,clean,automatic,fwd,compact,sedan,grey
-5450,2009.0,pontiac,excellent,6 cylinders,gas,119876.0,clean,automatic,fwd,full-size,sedan,grey
-5500,2001.0,toyota,excellent,6 cylinders,gas,98563.0,clean,automatic,fwd,mid-size,coupe,silver
-8800,2011.0,infiniti,good,6 cylinders,gas,134000.0,clean,automatic,4wd,mid-size,sedan,grey
-32995,2015.0,toyota,excellent,6 cylinders,gas,68564.0,clean,automatic,4wd,mid-size,pickup,white
-6800,2010.0,audi,good,4 cylinders,gas,105700.0,clean,automatic,fwd,mid-size,sedan,blue
-35990,2014.0,ford,good,10 cylinders,gas,42213.0,clean,automatic,4wd,full-size,truck,white
-4900,1998.0,honda,good,4 cylinders,gas,87000.0,clean,manual,fwd,compact,sedan,black
-2500,2005.0,honda,fair,4 cylinders,gas,233000.0,clean,automatic,fwd,full-size,sedan,silver
-21900,2017.0,chevrolet,excellent,6 cylinders,gas,28501.0,clean,automatic,fwd,full-size,sedan,white
-5250,2010.0,subaru,good,4 cylinders,gas,133223.0,rebuilt,automatic,4wd,mid-size,SUV,red
-26995,2018.0,toyota,like new,4 cylinders,gas,8614.0,clean,automatic,4wd,compact,SUV,red
-10999,2009.0,honda,excellent,4 cylinders,gas,154187.0,clean,automatic,fwd,full-size,sedan,red
-13988,2016.0,chevrolet,good,4 cylinders,gas,76503.0,clean,automatic,4wd,compact,SUV,red
-6995,2012.0,volvo,excellent,5 cylinders,gas,126000.0,clean,automatic,4wd,mid-size,sedan,grey
-8599,1984.0,ram,fair,8 cylinders,gas,85000.0,missing,automatic,rwd,full-size,pickup,brown
-15900,2013.0,ford,good,6 cylinders,gas,143000.0,clean,automatic,4wd,full-size,pickup,white
-2000,2006.0,toyota,salvage,4 cylinders,gas,227656.0,salvage,manual,fwd,compact,hatchback,grey
-3200,1995.0,ford,fair,4 cylinders,gas,167000.0,clean,automatic,fwd,full-size,truck,blue
-7800,2009.0,toyota,excellent,4 cylinders,hybrid,106500.0,clean,automatic,fwd,compact,hatchback,grey
-55999,2016.0,ford,excellent,8 cylinders,diesel,88501.0,clean,automatic,4wd,full-size,truck,black
-6500,2003.0,cadillac,excellent,8 cylinders,gas,138197.0,clean,automatic,4wd,full-size,SUV,brown
-2500,2005.0,jeep,fair,6 cylinders,gas,140000.0,clean,automatic,rwd,full-size,SUV,silver
-16995,2003.0,ram,excellent,6 cylinders,diesel,265000.0,clean,manual,4wd,full-size,truck,blue
-3395,2003.0,saturn,excellent,4 cylinders,gas,134950.0,clean,automatic,fwd,mid-size,sedan,silver
-20988,2018.0,honda,like new,4 cylinders,gas,20000.0,clean,automatic,fwd,full-size,sedan,silver
-6000,2000.0,mercedes-benz,excellent,6 cylinders,gas,62000.0,clean,automatic,rwd,full-size,coupe,black
-3350,2005.0,chevrolet,excellent,8 cylinders,gas,239078.0,clean,automatic,4wd,mid-size,SUV,green
-19990,2013.0,chevrolet,good,8 cylinders,gas,100981.0,clean,automatic,4wd,full-size,pickup,silver
-3800,2014.0,fiat,like new,4 cylinders,gas,82000.0,clean,automatic,fwd,compact,hatchback,green
-3000,2002.0,audi,excellent,4 cylinders,gas,154000.0,clean,automatic,4wd,mid-size,wagon,black
-7995,2009.0,chevrolet,excellent,6 cylinders,gas,140000.0,clean,automatic,rwd,full-size,SUV,blue
-8000,2002.0,chevrolet,good,8 cylinders,gas,82460.0,clean,automatic,4wd,full-size,pickup,red
-11975,2009.0,ford,excellent,8 cylinders,gas,169000.0,clean,manual,rwd,mid-size,coupe,white
-1850,1999.0,mercury,good,6 cylinders,gas,102000.0,clean,automatic,fwd,mid-size,sedan,blue
-27000,2017.0,subaru,like new,4 cylinders,gas,21800.0,clean,manual,4wd,compact,sedan,silver
-12635,1999.0,chevrolet,excellent,8 cylinders,gas,156000.0,clean,automatic,4wd,full-size,SUV,red
-1300,2005.0,lincoln,good,8 cylinders,gas,155862.0,clean,automatic,fwd,full-size,sedan,black
-19675,2016.0,jeep,excellent,6 cylinders,gas,134896.0,clean,automatic,4wd,full-size,SUV,grey
-8995,2003.0,ram,excellent,8 cylinders,gas,140200.0,salvage,automatic,4wd,full-size,pickup,blue
-12995,2013.0,subaru,excellent,6 cylinders,gas,123000.0,clean,automatic,4wd,full-size,wagon,grey
-12500,2012.0,ford,good,8 cylinders,gas,129746.0,clean,automatic,fwd,full-size,truck,white
-16999,2017.0,volkswagen,excellent,4 cylinders,gas,65523.0,clean,automatic,4wd,full-size,SUV,black
-5995,2010.0,hyundai,excellent,4 cylinders,gas,135144.0,clean,automatic,fwd,mid-size,sedan,white
-25995,2017.0,gmc,good,8 cylinders,gas,111049.0,clean,automatic,4wd,full-size,truck,red
-8999,1986.0,toyota,excellent,4 cylinders,gas,161773.0,clean,automatic,rwd,mid-size,pickup,white
-33995,2015.0,ford,good,8 cylinders,gas,134020.0,clean,automatic,4wd,full-size,truck,white
-7750,2014.0,toyota,good,4 cylinders,gas,142000.0,clean,automatic,fwd,full-size,sedan,blue
-13850,2018.0,kia,excellent,4 cylinders,gas,20000.0,clean,automatic,fwd,sub-compact,hatchback,white
-25999,2017.0,ford,excellent,4 cylinders,gas,66022.0,clean,automatic,rwd,full-size,convertible,red
-7950,2014.0,honda,excellent,4 cylinders,gas,81000.0,clean,automatic,fwd,compact,sedan,black
-6995,2005.0,lexus,excellent,6 cylinders,gas,169629.0,clean,automatic,fwd,compact,sedan,blue
-4995,1991.0,cadillac,good,8 cylinders,gas,85537.0,clean,automatic,fwd,mid-size,sedan,blue
-8395,2007.0,bmw,good,6 cylinders,gas,131000.0,clean,automatic,rwd,mid-size,sedan,grey
-=======
-price,year,manufacturer,condition,cylinders,fuel,odometer,title_status,transmission,drive,size,type,paint_color
-11000,2010.0,chevrolet,good,8 cylinders,gas,188338.0,clean,automatic,4wd,full-size,truck,silver
-13700,2014.0,ford,like new,4 cylinders,gas,34000.0,clean,automatic,fwd,mid-size,SUV,red
-2800,2001.0,ford,good,4 cylinders,gas,139000.0,clean,automatic,fwd,mid-size,sedan,black
-13500,1999.0,bmw,like new,6 cylinders,gas,7100.0,clean,automatic,rwd,sub-compact,convertible,blue
-13950,2013.0,honda,excellent,4 cylinders,gas,107326.0,clean,automatic,4wd,mid-size,SUV,red
-8500,2011.0,chevrolet,excellent,6 cylinders,gas,179000.0,clean,automatic,4wd,mid-size,SUV,black
-7000,2013.0,toyota,excellent,4 cylinders,hybrid,156840.0,clean,automatic,fwd,mid-size,hatchback,silver
-5000,2005.0,ford,good,8 cylinders,diesel,214229.0,clean,automatic,rwd,full-size,other,white
-75850,2020.0,ford,excellent,8 cylinders,diesel,47205.0,clean,automatic,4wd,full-size,pickup,white
-17999,2008.0,mercedes-benz,excellent,8 cylinders,gas,108000.0,clean,automatic,rwd,full-size,coupe,black
-11950,2012.0,acura,excellent,6 cylinders,gas,160000.0,clean,automatic,4wd,mid-size,SUV,black
-14489,2006.0,toyota,excellent,8 cylinders,gas,149786.0,clean,automatic,4wd,full-size,pickup,white
-14000,2013.0,audi,excellent,4 cylinders,gas,106800.0,clean,automatic,4wd,mid-size,sedan,silver
-2950,1996.0,ford,good,6 cylinders,gas,218822.0,clean,automatic,rwd,mid-size,SUV,red
-3500,2001.0,jeep,fair,6 cylinders,gas,213000.0,clean,automatic,4wd,mid-size,SUV,red
-11900,2015.0,nissan,excellent,4 cylinders,gas,149894.0,clean,automatic,4wd,mid-size,SUV,grey
-9795,2008.0,mercedes-benz,excellent,8 cylinders,gas,166526.0,clean,automatic,4wd,full-size,SUV,silver
-3500,2003.0,chevrolet,fair,8 cylinders,gas,225000.0,clean,automatic,rwd,full-size,truck,white
-3500,2002.0,gmc,excellent,6 cylinders,gas,236032.0,clean,automatic,rwd,full-size,SUV,silver
-12200,2010.0,ram,good,8 cylinders,gas,224000.0,clean,automatic,4wd,full-size,truck,blue
-4995,2008.0,volvo,good,6 cylinders,gas,209559.0,clean,automatic,4wd,mid-size,SUV,black
-12495,2014.0,acura,good,6 cylinders,gas,145769.0,clean,automatic,4wd,full-size,SUV,black
-18995,2012.0,jaguar,excellent,8 cylinders,gas,87964.0,clean,automatic,rwd,full-size,sedan,green
-58500,2019.0,ford,like new,6 cylinders,gas,21980.0,lien,automatic,4wd,full-size,SUV,black
-4100,2006.0,toyota,like new,6 cylinders,hybrid,199000.0,clean,automatic,4wd,mid-size,SUV,blue
-12700,2004.0,jeep,excellent,4 cylinders,gas,106021.0,clean,manual,4wd,mid-size,offroad,black
-2800,2003.0,volkswagen,good,4 cylinders,gas,127000.0,clean,manual,fwd,compact,hatchback,green
-8650,2004.0,chevrolet,good,8 cylinders,gas,245830.0,clean,automatic,rwd,full-size,truck,white
-12000,2016.0,dodge,excellent,6 cylinders,gas,99500.0,clean,automatic,fwd,mid-size,SUV,grey
-13950,2014.0,honda,excellent,6 cylinders,gas,161203.0,clean,automatic,fwd,full-size,mini-van,grey
-20888,2015.0,mercedes-benz,excellent,6 cylinders,gas,111261.0,clean,automatic,4wd,full-size,SUV,silver
-8995,2015.0,chevrolet,excellent,4 cylinders,gas,100962.0,clean,automatic,fwd,compact,sedan,white
-6700,2008.0,bmw,excellent,6 cylinders,gas,153251.0,clean,automatic,4wd,full-size,SUV,silver
-8900,2004.0,chevrolet,excellent,5 cylinders,gas,153300.0,clean,automatic,4wd,mid-size,pickup,red
-10950,2012.0,jeep,good,6 cylinders,gas,107000.0,clean,automatic,4wd,full-size,SUV,green
-2995,2002.0,saturn,good,4 cylinders,gas,136000.0,clean,automatic,fwd,compact,sedan,red
-6495,2006.0,ford,new,8 cylinders,gas,167000.0,clean,automatic,4wd,full-size,SUV,brown
-1500,2006.0,jeep,good,6 cylinders,gas,186410.0,clean,automatic,4wd,full-size,SUV,black
-16999,2011.0,toyota,good,8 cylinders,gas,121000.0,lien,automatic,rwd,full-size,truck,silver
-9250,2011.0,acura,excellent,6 cylinders,gas,130000.0,clean,automatic,fwd,full-size,sedan,black
-9900,2007.0,chevrolet,fair,8 cylinders,diesel,270000.0,clean,automatic,4wd,full-size,pickup,black
-8900,2004.0,ram,good,8 cylinders,gas,158447.0,clean,automatic,4wd,full-size,truck,red
-2500,2000.0,toyota,fair,6 cylinders,gas,215000.0,clean,automatic,4wd,mid-size,SUV,silver
-2995,2006.0,saturn,excellent,4 cylinders,gas,133000.0,clean,manual,fwd,compact,sedan,red
-12500,2013.0,subaru,excellent,4 cylinders,gas,75121.0,clean,automatic,4wd,full-size,SUV,red
-21999,2006.0,lexus,excellent,8 cylinders,gas,80435.0,clean,automatic,rwd,sub-compact,convertible,grey
-14995,2011.0,chevrolet,excellent,8 cylinders,gas,137950.0,clean,automatic,4wd,full-size,truck,grey
-23999,2012.0,ford,excellent,6 cylinders,gas,99300.0,clean,automatic,4wd,full-size,truck,red
-12995,2017.0,volkswagen,excellent,4 cylinders,gas,110971.0,clean,automatic,fwd,full-size,sedan,grey
-9300,2010.0,acura,excellent,6 cylinders,gas,119000.0,clean,automatic,fwd,compact,sedan,grey
-5450,2009.0,pontiac,excellent,6 cylinders,gas,119876.0,clean,automatic,fwd,full-size,sedan,grey
-5500,2001.0,toyota,excellent,6 cylinders,gas,98563.0,clean,automatic,fwd,mid-size,coupe,silver
-8800,2011.0,infiniti,good,6 cylinders,gas,134000.0,clean,automatic,4wd,mid-size,sedan,grey
-32995,2015.0,toyota,excellent,6 cylinders,gas,68564.0,clean,automatic,4wd,mid-size,pickup,white
-6800,2010.0,audi,good,4 cylinders,gas,105700.0,clean,automatic,fwd,mid-size,sedan,blue
-35990,2014.0,ford,good,10 cylinders,gas,42213.0,clean,automatic,4wd,full-size,truck,white
-4900,1998.0,honda,good,4 cylinders,gas,87000.0,clean,manual,fwd,compact,sedan,black
-2500,2005.0,honda,fair,4 cylinders,gas,233000.0,clean,automatic,fwd,full-size,sedan,silver
-21900,2017.0,chevrolet,excellent,6 cylinders,gas,28501.0,clean,automatic,fwd,full-size,sedan,white
-5250,2010.0,subaru,good,4 cylinders,gas,133223.0,rebuilt,automatic,4wd,mid-size,SUV,red
-26995,2018.0,toyota,like new,4 cylinders,gas,8614.0,clean,automatic,4wd,compact,SUV,red
-10999,2009.0,honda,excellent,4 cylinders,gas,154187.0,clean,automatic,fwd,full-size,sedan,red
-13988,2016.0,chevrolet,good,4 cylinders,gas,76503.0,clean,automatic,4wd,compact,SUV,red
-6995,2012.0,volvo,excellent,5 cylinders,gas,126000.0,clean,automatic,4wd,mid-size,sedan,grey
-8599,1984.0,ram,fair,8 cylinders,gas,85000.0,missing,automatic,rwd,full-size,pickup,brown
-15900,2013.0,ford,good,6 cylinders,gas,143000.0,clean,automatic,4wd,full-size,pickup,white
-2000,2006.0,toyota,salvage,4 cylinders,gas,227656.0,salvage,manual,fwd,compact,hatchback,grey
-3200,1995.0,ford,fair,4 cylinders,gas,167000.0,clean,automatic,fwd,full-size,truck,blue
-7800,2009.0,toyota,excellent,4 cylinders,hybrid,106500.0,clean,automatic,fwd,compact,hatchback,grey
-55999,2016.0,ford,excellent,8 cylinders,diesel,88501.0,clean,automatic,4wd,full-size,truck,black
-6500,2003.0,cadillac,excellent,8 cylinders,gas,138197.0,clean,automatic,4wd,full-size,SUV,brown
-2500,2005.0,jeep,fair,6 cylinders,gas,140000.0,clean,automatic,rwd,full-size,SUV,silver
-16995,2003.0,ram,excellent,6 cylinders,diesel,265000.0,clean,manual,4wd,full-size,truck,blue
-3395,2003.0,saturn,excellent,4 cylinders,gas,134950.0,clean,automatic,fwd,mid-size,sedan,silver
-20988,2018.0,honda,like new,4 cylinders,gas,20000.0,clean,automatic,fwd,full-size,sedan,silver
-6000,2000.0,mercedes-benz,excellent,6 cylinders,gas,62000.0,clean,automatic,rwd,full-size,coupe,black
-3350,2005.0,chevrolet,excellent,8 cylinders,gas,239078.0,clean,automatic,4wd,mid-size,SUV,green
-19990,2013.0,chevrolet,good,8 cylinders,gas,100981.0,clean,automatic,4wd,full-size,pickup,silver
-3800,2014.0,fiat,like new,4 cylinders,gas,82000.0,clean,automatic,fwd,compact,hatchback,green
-3000,2002.0,audi,excellent,4 cylinders,gas,154000.0,clean,automatic,4wd,mid-size,wagon,black
-7995,2009.0,chevrolet,excellent,6 cylinders,gas,140000.0,clean,automatic,rwd,full-size,SUV,blue
-8000,2002.0,chevrolet,good,8 cylinders,gas,82460.0,clean,automatic,4wd,full-size,pickup,red
-11975,2009.0,ford,excellent,8 cylinders,gas,169000.0,clean,manual,rwd,mid-size,coupe,white
-1850,1999.0,mercury,good,6 cylinders,gas,102000.0,clean,automatic,fwd,mid-size,sedan,blue
-27000,2017.0,subaru,like new,4 cylinders,gas,21800.0,clean,manual,4wd,compact,sedan,silver
-12635,1999.0,chevrolet,excellent,8 cylinders,gas,156000.0,clean,automatic,4wd,full-size,SUV,red
-1300,2005.0,lincoln,good,8 cylinders,gas,155862.0,clean,automatic,fwd,full-size,sedan,black
-19675,2016.0,jeep,excellent,6 cylinders,gas,134896.0,clean,automatic,4wd,full-size,SUV,grey
-8995,2003.0,ram,excellent,8 cylinders,gas,140200.0,salvage,automatic,4wd,full-size,pickup,blue
-12995,2013.0,subaru,excellent,6 cylinders,gas,123000.0,clean,automatic,4wd,full-size,wagon,grey
-12500,2012.0,ford,good,8 cylinders,gas,129746.0,clean,automatic,fwd,full-size,truck,white
-16999,2017.0,volkswagen,excellent,4 cylinders,gas,65523.0,clean,automatic,4wd,full-size,SUV,black
-5995,2010.0,hyundai,excellent,4 cylinders,gas,135144.0,clean,automatic,fwd,mid-size,sedan,white
-25995,2017.0,gmc,good,8 cylinders,gas,111049.0,clean,automatic,4wd,full-size,truck,red
-8999,1986.0,toyota,excellent,4 cylinders,gas,161773.0,clean,automatic,rwd,mid-size,pickup,white
-33995,2015.0,ford,good,8 cylinders,gas,134020.0,clean,automatic,4wd,full-size,truck,white
-7750,2014.0,toyota,good,4 cylinders,gas,142000.0,clean,automatic,fwd,full-size,sedan,blue
-13850,2018.0,kia,excellent,4 cylinders,gas,20000.0,clean,automatic,fwd,sub-compact,hatchback,white
-25999,2017.0,ford,excellent,4 cylinders,gas,66022.0,clean,automatic,rwd,full-size,convertible,red
-7950,2014.0,honda,excellent,4 cylinders,gas,81000.0,clean,automatic,fwd,compact,sedan,black
-6995,2005.0,lexus,excellent,6 cylinders,gas,169629.0,clean,automatic,fwd,compact,sedan,blue
-4995,1991.0,cadillac,good,8 cylinders,gas,85537.0,clean,automatic,fwd,mid-size,sedan,blue
-8395,2007.0,bmw,good,6 cylinders,gas,131000.0,clean,automatic,rwd,mid-size,sedan,grey
->>>>>>> e6bcb84 (fix: pending changes before rebase)
+year,odometer,manufacturer,condition,fuel,transmission,type,paint_color,price
+2010.0,188338.0,chevrolet,good,gas,automatic,truck,silver,11000
+2014.0,34000.0,ford,like new,gas,automatic,SUV,red,13700
+2001.0,139000.0,ford,good,gas,automatic,sedan,black,2800
+1999.0,7100.0,bmw,like new,gas,automatic,convertible,blue,13500
+2013.0,107326.0,honda,excellent,gas,automatic,SUV,red,13950
+2011.0,179000.0,chevrolet,excellent,gas,automatic,SUV,black,8500
+2013.0,156840.0,toyota,excellent,hybrid,automatic,hatchback,silver,7000
+2005.0,214229.0,ford,good,diesel,automatic,other,white,5000
+2020.0,47205.0,ford,excellent,diesel,automatic,pickup,white,75850
+2008.0,108000.0,mercedes-benz,excellent,gas,automatic,coupe,black,17999
+2012.0,160000.0,acura,excellent,gas,automatic,SUV,black,11950
+2006.0,149786.0,toyota,excellent,gas,automatic,pickup,white,14489
+2013.0,106800.0,audi,excellent,gas,automatic,sedan,silver,14000
+1996.0,218822.0,ford,good,gas,automatic,SUV,red,2950
+2001.0,213000.0,jeep,fair,gas,automatic,SUV,red,3500
+2015.0,149894.0,nissan,excellent,gas,automatic,SUV,grey,11900
+2008.0,166526.0,mercedes-benz,excellent,gas,automatic,SUV,silver,9795
+2003.0,225000.0,chevrolet,fair,gas,automatic,truck,white,3500
+2002.0,236032.0,gmc,excellent,gas,automatic,SUV,silver,3500
+2010.0,224000.0,ram,good,gas,automatic,truck,blue,12200
+2008.0,209559.0,volvo,good,gas,automatic,SUV,black,4995
+2014.0,145769.0,acura,good,gas,automatic,SUV,black,12495
+2012.0,87964.0,jaguar,excellent,gas,automatic,sedan,green,18995
+2019.0,21980.0,ford,like new,gas,automatic,SUV,black,58500
+2006.0,199000.0,toyota,like new,hybrid,automatic,SUV,blue,4100
+2004.0,106021.0,jeep,excellent,gas,manual,offroad,black,12700
+2003.0,127000.0,volkswagen,good,gas,manual,hatchback,green,2800
+2004.0,245830.0,chevrolet,good,gas,automatic,truck,white,8650
+2016.0,99500.0,dodge,excellent,gas,automatic,SUV,grey,12000
+2014.0,161203.0,honda,excellent,gas,automatic,mini-van,grey,13950
+2015.0,111261.0,mercedes-benz,excellent,gas,automatic,SUV,silver,20888
+2015.0,100962.0,chevrolet,excellent,gas,automatic,sedan,white,8995
+2008.0,153251.0,bmw,excellent,gas,automatic,SUV,silver,6700
+2004.0,153300.0,chevrolet,excellent,gas,automatic,pickup,red,8900
+2012.0,107000.0,jeep,good,gas,automatic,SUV,green,10950
+2002.0,136000.0,saturn,good,gas,automatic,sedan,red,2995
+2006.0,167000.0,ford,new,gas,automatic,SUV,brown,6495
+2006.0,186410.0,jeep,good,gas,automatic,SUV,black,1500
+2011.0,121000.0,toyota,good,gas,automatic,truck,silver,16999
+2011.0,130000.0,acura,excellent,gas,automatic,sedan,black,9250
+2007.0,270000.0,chevrolet,fair,diesel,automatic,pickup,black,9900
+2004.0,158447.0,ram,good,gas,automatic,truck,red,8900
+2000.0,215000.0,toyota,fair,gas,automatic,SUV,silver,2500
+2006.0,133000.0,saturn,excellent,gas,manual,sedan,red,2995
+2013.0,75121.0,subaru,excellent,gas,automatic,SUV,red,12500
+2006.0,80435.0,lexus,excellent,gas,automatic,convertible,grey,21999
+2011.0,137950.0,chevrolet,excellent,gas,automatic,truck,grey,14995
+2012.0,99300.0,ford,excellent,gas,automatic,truck,red,23999
+2017.0,110971.0,volkswagen,excellent,gas,automatic,sedan,grey,12995
+2010.0,119000.0,acura,excellent,gas,automatic,sedan,grey,9300
+2009.0,119876.0,pontiac,excellent,gas,automatic,sedan,grey,5450
+2001.0,98563.0,toyota,excellent,gas,automatic,coupe,silver,5500
+2011.0,134000.0,infiniti,good,gas,automatic,sedan,grey,8800
+2015.0,68564.0,toyota,excellent,gas,automatic,pickup,white,32995
+2010.0,105700.0,audi,good,gas,automatic,sedan,blue,6800
+2014.0,42213.0,ford,good,gas,automatic,truck,white,35990
+1998.0,87000.0,honda,good,gas,manual,sedan,black,4900
+2005.0,233000.0,honda,fair,gas,automatic,sedan,silver,2500
+2017.0,28501.0,chevrolet,excellent,gas,automatic,sedan,white,21900
+2010.0,133223.0,subaru,good,gas,automatic,SUV,red,5250
+2018.0,8614.0,toyota,like new,gas,automatic,SUV,red,26995
+2009.0,154187.0,honda,excellent,gas,automatic,sedan,red,10999
+2016.0,76503.0,chevrolet,good,gas,automatic,SUV,red,13988
+2012.0,126000.0,volvo,excellent,gas,automatic,sedan,grey,6995
+1984.0,85000.0,ram,fair,gas,automatic,pickup,brown,8599
+2013.0,143000.0,ford,good,gas,automatic,pickup,white,15900
+2006.0,227656.0,toyota,salvage,gas,manual,hatchback,grey,2000
+1995.0,167000.0,ford,fair,gas,automatic,truck,blue,3200
+2009.0,106500.0,toyota,excellent,hybrid,automatic,hatchback,grey,7800
+2016.0,88501.0,ford,excellent,diesel,automatic,truck,black,55999
+2003.0,138197.0,cadillac,excellent,gas,automatic,SUV,brown,6500
+2005.0,140000.0,jeep,fair,gas,automatic,SUV,silver,2500
+2003.0,265000.0,ram,excellent,diesel,manual,truck,blue,16995
+2003.0,134950.0,saturn,excellent,gas,automatic,sedan,silver,3395
+2018.0,20000.0,honda,like new,gas,automatic,sedan,silver,20988
+2000.0,62000.0,mercedes-benz,excellent,gas,automatic,coupe,black,6000
+2005.0,239078.0,chevrolet,excellent,gas,automatic,SUV,green,3350
+2013.0,100981.0,chevrolet,good,gas,automatic,pickup,silver,19990
+2014.0,82000.0,fiat,like new,gas,automatic,hatchback,green,3800
+2002.0,154000.0,audi,excellent,gas,automatic,wagon,black,3000
+2009.0,140000.0,chevrolet,excellent,gas,automatic,SUV,blue,7995
+2002.0,82460.0,chevrolet,good,gas,automatic,pickup,red,8000
+2009.0,169000.0,ford,excellent,gas,manual,coupe,white,11975
+1999.0,102000.0,mercury,good,gas,automatic,sedan,blue,1850
+2017.0,21800.0,subaru,like new,gas,manual,sedan,silver,27000
+1999.0,156000.0,chevrolet,excellent,gas,automatic,SUV,red,12635
+2005.0,155862.0,lincoln,good,gas,automatic,sedan,black,1300
+2016.0,134896.0,jeep,excellent,gas,automatic,SUV,grey,19675
+2003.0,140200.0,ram,excellent,gas,automatic,pickup,blue,8995
+2013.0,123000.0,subaru,excellent,gas,automatic,wagon,grey,12995
+2012.0,129746.0,ford,good,gas,automatic,truck,white,12500
+2017.0,65523.0,volkswagen,excellent,gas,automatic,SUV,black,16999
+2010.0,135144.0,hyundai,excellent,gas,automatic,sedan,white,5995
+2017.0,111049.0,gmc,good,gas,automatic,truck,red,25995
+1986.0,161773.0,toyota,excellent,gas,automatic,pickup,white,8999
+2015.0,134020.0,ford,good,gas,automatic,truck,white,33995
+2014.0,142000.0,toyota,good,gas,automatic,sedan,blue,7750
+2018.0,20000.0,kia,excellent,gas,automatic,hatchback,white,13850
+2017.0,66022.0,ford,excellent,gas,automatic,convertible,red,25999
+2014.0,81000.0,honda,excellent,gas,automatic,sedan,black,7950
+2005.0,169629.0,lexus,excellent,gas,automatic,sedan,blue,6995
+1991.0,85537.0,cadillac,good,gas,automatic,sedan,blue,4995
+2007.0,131000.0,bmw,good,gas,automatic,sedan,grey,8395

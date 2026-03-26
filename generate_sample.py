@@ -32,6 +32,19 @@ df_small = df.sample(n=200, random_state=42)
 # limpieza final (por seguridad)
 df_small = df_small.dropna()
 
+# 🔥 ORDENAR COLUMNAS 
+df_small = df_small[[
+    "year",
+    "odometer",
+    "manufacturer",
+    "condition",
+    "fuel",
+    "transmission",
+    "type",
+    "paint_color",
+    "price"
+]]
+
 # =========================
 # GUARDAR
 # =========================
