@@ -6,7 +6,7 @@ A production-ready machine learning application that estimates the market value 
 
 ## 🚀 Live Demo
 
-👉 Available upon request (secure live demo)
+Available upon request (secure live demo)
 
 https://nongrained-courageously-denyse.ngrok-free.dev
 
