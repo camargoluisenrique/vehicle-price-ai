@@ -1,78 +1,128 @@
-# 🚗 Vehicle Price Estimator (Machine Learning)
+# 🚗 Vehicle Price AI
 
-A production-ready machine learning application that estimates the market value of used vehicles using real-world data and predictive modeling.
+Machine Learning web application to predict used vehicle prices based on structured data.
 
----
-
-## 🚀 Live Demo
-
-Available upon request (secure live demo)
-
-https://nongrained-courageously-denyse.ngrok-free.dev
+🔗 **Live Demo:** https://vehicle-price-ai.onrender.com  
+📂 **Repository:** https://github.com/camargoluisenrique/vehicle-price-ai  
 
 ---
 
-## 📊 Problem
+## 📌 Overview
 
-Estimating the price of used vehicles is a complex regression problem due to:
+This project builds an end-to-end Machine Learning system capable of predicting vehicle prices using real-world data.
 
-- High variability in vehicle conditions  
-- Market-driven pricing dynamics  
-- Mixed feature types (categorical + numerical)  
+It includes:
 
-This project simulates a real-world pricing engine similar to platforms like **Kavak, Kelley Blue Book, and Carvana**.
-
----
-
-## ⚙️ Solution
-
-Developed an end-to-end machine learning pipeline that:
-
-- Cleans and filters noisy real-world data  
-- Handles missing values and outliers  
-- Encodes categorical variables efficiently  
-- Trains a regression model for price prediction  
-- Delivers real-time predictions through an interactive web application  
+- Data preprocessing pipeline
+- Model training and evaluation
+- Feature importance analysis
+- Interactive web interface (Streamlit)
+- Cloud deployment (Render)
 
 ---
 
-## 🤖 Model
+## 🚀 Features
 
-- Algorithm: **Random Forest Regressor**  
-- Feature engineering and categorical encoding  
-- Outlier filtering for improved stability  
-
----
-
-## 📈 Performance
-
-- Mean Absolute Error (MAE): **~$3,000 USD**
-
-This level of error is considered acceptable given the variability and uncertainty in used vehicle markets.
+- 💰 Price prediction in real time  
+- 📊 Model performance metrics (MAE, RMSE)  
+- 🧠 Feature importance visualization  
+- 📦 Optimized dataset preview  
+- 🌎 Public deployment (Render)  
+- 💱 USD → MXN conversion  
 
 ---
 
-## 💼 Business Impact
+## 📊 Model Performance
 
-This system enables:
-
-- Fast and scalable vehicle valuation  
-- Price benchmarking for sellers  
-- Decision support for buyers and marketplaces  
-- Foundation for real-world pricing engines in automotive platforms  
+| Metric | Value |
+|------|------|
+| MAE | 3,549 |
+| RMSE | 5,375 |
 
 ---
 
-## 🧪 Run Locally
+## 📸 Application Preview
+
+![Main App](images/app1.png)
+
+![Prediction](images/app2.png)
+
+![Feature Importance](images/app3.png)
+
+![Dataset Preview](images/app4.png)
+
+---
+
+## 🧠 Machine Learning Pipeline
+
+1. Data Cleaning (missing values, filtering)
+2. Feature Engineering
+3. Categorical Encoding (OneHotEncoder)
+4. Model Training (Random Forest Regressor)
+5. Evaluation (MAE, RMSE)
+6. Deployment (Streamlit + Docker + Render)
+
+---
+
+## 📂 Dataset
+
+- Source: Kaggle (used vehicles dataset)
+- Cleaned dataset: `clean_data.csv`
+- Sample dataset: `sample_data.csv` (for lightweight UI preview)
+
+---
+
+## 🚀 Business Impact
+
+This model can be used by:
+
+- Car marketplaces  
+- Dealerships  
+- Buyers to estimate fair prices  
+
+✔️ Reduces pricing uncertainty  
+✔️ Improves decision-making  
+✔️ Enables automated valuation systems  
+
+---
+
+## 🎯 Final Result
+
+- Predicts vehicle prices in real time  
+- Handles structured data inputs  
+- Provides model interpretability (feature importance)  
+- Fully deployed and accessible via web  
+
+---
+
+## 🛠️ Tech Stack
+
+- Python
+- Pandas / NumPy
+- Scikit-learn
+- Streamlit
+- Docker
+- Render (deployment)
+
+---
+
+## ⚙️ Run Locally
 
 ```bash
+git clone https://github.com/camargoluisenrique/vehicle-price-ai.git
+cd vehicle-price-ai
+
+python -m venv venv
+venv\Scripts\activate
+
 pip install -r requirements.txt
+
 streamlit run app.py
 ```
 
 ---
 
-🧑‍💻 Author
+👤 Author
 
-Luis Enrique Camargo      
+Luis Enrique Camargo
 Data Scientist | Machine Learning Engineer
