@@ -1,132 +1,117 @@
 import streamlit as st
 import pandas as pd
-from model import train_model, predict
+
+from model import (
+    load_model,
+    predict_price,
+    evaluate_model,
+    get_feature_importance,
+    load_data
+)
 
 # =========================
 # CONFIG
 # =========================
-st.set_page_config(page_title="Vehicle Price Estimator", layout="centered")
+st.set_page_config(page_title="Vehicle Price AI", layout="centered")
 
 # =========================
-# STYLE
-# =========================
-st.markdown("""
-<style>
-body {
-    font-family: 'Inter', sans-serif;
-}
-
-.block-container {
-    padding-top: 2rem;
-    max-width: 900px;
-}
-
-.stButton>button {
-    background-color: #2563eb;
-    color: white !important;
-}
-
-.stButton>button:hover {
-    background-color: #1d4ed8;
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-# =========================
-# LOAD DATA + MODEL
+# CACHE
 # =========================
 @st.cache_resource
-def load_all():
-    df = pd.read_csv("data/sample_data.csv")
-    df = df.dropna()
+def load_model_cached():
+    return load_model()
 
-    model, X_test, _ = train_model()
+@st.cache_data
+def load_sample_data():
+    return pd.read_csv("data/sample_data.csv")
 
-    return df, model, X_test
-
-# =========================
-# LOADING UX (PLACEHOLDER)
-# =========================
-placeholder = st.empty()
-
-with placeholder.container():
-    st.markdown("### Initializing pricing engine...")
-    st.caption("Loading model and preparing data...")
-    st.progress(50)
-
-df, model, X_test = load_all()
-
-placeholder.empty()
+model = load_model_cached()
+data = load_sample_data()
 
 # =========================
 # TITLE
 # =========================
-st.markdown("## Vehicle Price Estimator")
-st.caption("Real-time valuation for used vehicles based on market data")
+st.title("🚗 Vehicle Price AI")
+st.write("Predict used vehicle prices using Machine Learning")
 
 st.divider()
 
 # =========================
-# INPUT
+# MODEL METRICS
 # =========================
-st.subheader("Vehicle Details")
+X, y = load_data()
+mae, rmse = evaluate_model(model, X, y)
+
+st.subheader("Model Performance")
 
 col1, col2 = st.columns(2)
-
-with col1:
-    year = st.slider("Year", 1990, 2023, 2015)
-    odometer = st.number_input("Mileage (km)", 0, 300000, 50000)
-
-with col2:
-    manufacturer = st.selectbox("Manufacturer", sorted(df["manufacturer"].unique()))
-    fuel = st.selectbox("Fuel Type", sorted(df["fuel"].unique()))
-
-condition = st.selectbox("Condition", sorted(df["condition"].unique()))
-transmission = st.selectbox("Transmission", sorted(df["transmission"].unique()))
-vehicle_type = st.selectbox("Vehicle Type", sorted(df["type"].unique()))
-paint_color = st.selectbox("Color", sorted(df["paint_color"].unique()))
+col1.metric("MAE", f"{mae:,.2f}")
+col2.metric("RMSE", f"{rmse:,.2f}")
 
 # =========================
-# ENCODING (CONSISTENTE CON MODELO)
+# INPUTS
 # =========================
-def encode(df, col, value):
-    categories = df[col].astype("category").cat.categories
-    mapping = dict(zip(categories, range(len(categories))))
-    return mapping[value]
+st.subheader("Vehicle Features")
 
-sample = X_test.iloc[0].copy()
+year = st.slider("Year", 2000, 2025, 2018)
+mileage = st.number_input("Mileage (km)", value=50000)
 
-sample["year"] = year
-sample["odometer"] = odometer
-sample["manufacturer"] = encode(df, "manufacturer", manufacturer)
-sample["fuel"] = encode(df, "fuel", fuel)
-sample["condition"] = encode(df, "condition", condition)
-sample["transmission"] = encode(df, "transmission", transmission)
-sample["type"] = encode(df, "type", vehicle_type)
-sample["paint_color"] = encode(df, "paint_color", paint_color)
+manufacturer = st.selectbox("Manufacturer", ["ford","chevrolet","toyota","honda","bmw"])
+condition = st.selectbox("Condition", ["like new","excellent","good","fair"])
+fuel = st.selectbox("Fuel Type", ["gas","diesel","electric"])
+transmission = st.selectbox("Transmission", ["automatic","manual"])
+car_type = st.selectbox("Type", ["sedan","SUV","truck","coupe","van"])
+paint_color = st.selectbox("Color", ["white","black","red","blue","silver"])
 
 # =========================
 # PREDICT
 # =========================
-if st.button("Calculate Vehicle Value"):
+if st.button("Predict Price"):
 
-    result = predict(model, sample.to_dict())
-    price = result["price"]
+    input_data = pd.DataFrame({
+        "year": [year],
+        "odometer": [mileage],
+        "manufacturer": [manufacturer],
+        "condition": [condition],
+        "fuel": [fuel],
+        "transmission": [transmission],
+        "type": [car_type],
+        "paint_color": [paint_color]
+    })
 
-    st.markdown("---")
-    st.markdown("### Valuation Result")
+    prediction = predict_price(model, input_data)
 
-    st.metric("Estimated Price", f"${price:,.0f}")
-    st.progress(min(price / 50000, 1.0))
+    usd = prediction[0]
+    mxn = usd * 17
 
-    st.markdown("### Market Insight")
+    st.success(f"💰 Estimated Price: ${usd:,.2f} USD")
+    st.info(f"🇲🇽 Precio estimado: ${mxn:,.2f} MXN")
 
-    if price < 5000:
-        st.write("Low-value vehicle segment")
-    elif price < 20000:
-        st.write("Mid-range market vehicle")
-    else:
-        st.write("Premium segment vehicle")
+# =========================
+# FEATURE IMPORTANCE (FIX)
+# =========================
+importance_df = get_feature_importance(model)
 
-    st.caption("Prediction powered by Machine Learning")
+if importance_df is not None:
+
+    st.subheader("Feature Importance")
+
+    top_features = importance_df.head(10)
+
+    # tabla
+    st.dataframe(top_features)
+
+    # gráfica corregida (SIN ERROR)
+    st.bar_chart(
+        data=top_features,
+        x="feature",
+        y="importance"
+    )
+
+# =========================
+# DATASET VIEW
+# =========================
+with st.expander("📂 View Sample Data"):
+
+    st.write(f"Dataset size: {len(data)} rows")
+    st.dataframe(data.head(20))

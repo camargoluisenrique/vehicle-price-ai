@@ -1,82 +1,155 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split
+import numpy as np
+import os
+import joblib
+
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_absolute_error
+from sklearn.pipeline import Pipeline
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.metrics import mean_absolute_error, mean_squared_error
 
-# =========================
-# LOAD & CLEAN DATA
-# =========================
+# =========================================
+# PATHS
+# =========================================
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "data", "clean_data.csv")
+MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
+
+# =========================================
+# FEATURES
+# =========================================
+NUMERIC = ["year", "odometer"]
+
+CATEGORICAL = [
+    "manufacturer",
+    "condition",
+    "fuel",
+    "transmission",
+    "type",
+    "paint_color"
+]
+
+FEATURES = NUMERIC + CATEGORICAL
+TARGET = "price"
+
+# =========================================
+# LOAD DATA
+# =========================================
 def load_data():
-    df = pd.read_csv("data/vehicles.csv")
-
-    # eliminar columnas basura
-    df = df.drop(columns=[
-        'id','url','region','region_url','VIN','image_url',
-        'description','county','state','lat','long','posting_date'
-    ], errors="ignore")
-
-    # eliminar nulos importantes
-    df = df.dropna(subset=[
-        'price','year','manufacturer','condition','fuel',
-        'odometer','transmission','type','paint_color'
-    ])
-
-    # filtrar precios irreales
-    df = df[(df["price"] > 500) & (df["price"] < 100000)]
-
-    # eliminar modelo (alta cardinalidad)
-    df = df.drop(columns=["model"], errors="ignore")
-
-    # encoding categórico
-    for col in df.select_dtypes(include="object").columns:
-        df[col] = df[col].astype("category").cat.codes
-
-    X = df.drop("price", axis=1)
-    y = df["price"]
-
+    df = pd.read_csv(DATA_PATH)
+    X = df[FEATURES]
+    y = df[TARGET]
     return X, y
 
-
-# =========================
+# =========================================
 # TRAIN MODEL
-# =========================
-def train_model():
+# =========================================
+def train_and_save_model():
     X, y = load_data()
 
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=42
+    preprocessor = ColumnTransformer(
+        transformers=[
+            ("num", "passthrough", NUMERIC),
+            ("cat", OneHotEncoder(handle_unknown="ignore", sparse_output=False), CATEGORICAL)
+        ]
     )
 
-    model = RandomForestRegressor(
-        n_estimators=100,
-        max_depth=12,
-        random_state=42,
-        n_jobs=-1
-    )
+    model = Pipeline([
+        ("preprocess", preprocessor),
+        ("regressor", RandomForestRegressor(
+            n_estimators=120,
+            max_depth=12,
+            random_state=42,
+            n_jobs=-1
+        ))
+    ])
 
-    model.fit(X_train, y_train)
+    model.fit(X, y)
 
-    preds = model.predict(X_test)
+    joblib.dump(model, MODEL_PATH)
 
-    mae = mean_absolute_error(y_test, preds)
-    print(f"🔥 MAE: {mae:.2f}")
+    print("✅ Modelo entrenado y guardado en model.pkl")
 
-    return model, X_test, y_test
+    return model
 
+# =========================================
+# LOAD MODEL
+# =========================================
+def load_model():
+    if os.path.exists(MODEL_PATH):
+        return joblib.load(MODEL_PATH)
+    return train_and_save_model()
 
-# =========================
+# =========================================
+# PREP INPUT
+# =========================================
+def prepare_input(input_data):
+
+    if isinstance(input_data, pd.DataFrame):
+        df = input_data.copy()
+    else:
+        df = pd.DataFrame([input_data])
+
+    # mapping UI → modelo
+    df = df.rename(columns={
+        "mileage": "odometer",
+        "fuel_type": "fuel"
+    })
+
+    # columnas faltantes
+    for col in FEATURES:
+        if col not in df.columns:
+            if col in NUMERIC:
+                df[col] = 0
+            else:
+                df[col] = "unknown"
+
+    # orden correcto
+    df = df[FEATURES]
+
+    return df
+
+# =========================================
 # PREDICT
-# =========================
-def predict(model, input_data):
-    df = pd.DataFrame([input_data])
-    prediction = model.predict(df)[0]
+# =========================================
+def predict_price(model, input_df):
+    df = prepare_input(input_df)
+    return model.predict(df)
 
-    return {
-        "price": float(prediction)
-    }
+# =========================================
+# EVALUATION
+# =========================================
+def evaluate_model(model, X, y):
+    preds = model.predict(X)
+    mae = mean_absolute_error(y, preds)
+    rmse = np.sqrt(mean_squared_error(y, preds))
+    return mae, rmse
 
-# =========================
+# =========================================
+# FEATURE IMPORTANCE
+# =========================================
+def get_feature_importance(model):
+    try:
+        rf = model.named_steps["regressor"]
+        preprocessor = model.named_steps["preprocess"]
+
+        cat_features = preprocessor.named_transformers_["cat"].get_feature_names_out(CATEGORICAL)
+        feature_names = list(NUMERIC) + list(cat_features)
+
+        importances = rf.feature_importances_
+
+        return pd.DataFrame({
+            "feature": feature_names,
+            "importance": importances
+        }).sort_values(by="importance", ascending=False)
+
+    except Exception as e:
+        print("⚠️ Feature importance error:", e)
+        return None
+
+# =========================================
 # RUN
-# =========================
+# =========================================
 if __name__ == "__main__":
-    model, X_test, y_test = train_model()
+    train_and_save_model()

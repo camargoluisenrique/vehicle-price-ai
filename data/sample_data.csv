@@ -1,104 +1,301 @@
-year,odometer,manufacturer,condition,fuel,transmission,type,paint_color,price
-2010.0,188338.0,chevrolet,good,gas,automatic,truck,silver,11000
-2014.0,34000.0,ford,like new,gas,automatic,SUV,red,13700
-2001.0,139000.0,ford,good,gas,automatic,sedan,black,2800
-1999.0,7100.0,bmw,like new,gas,automatic,convertible,blue,13500
-2013.0,107326.0,honda,excellent,gas,automatic,SUV,red,13950
-2011.0,179000.0,chevrolet,excellent,gas,automatic,SUV,black,8500
-2013.0,156840.0,toyota,excellent,hybrid,automatic,hatchback,silver,7000
-2005.0,214229.0,ford,good,diesel,automatic,other,white,5000
-2020.0,47205.0,ford,excellent,diesel,automatic,pickup,white,75850
-2008.0,108000.0,mercedes-benz,excellent,gas,automatic,coupe,black,17999
-2012.0,160000.0,acura,excellent,gas,automatic,SUV,black,11950
-2006.0,149786.0,toyota,excellent,gas,automatic,pickup,white,14489
-2013.0,106800.0,audi,excellent,gas,automatic,sedan,silver,14000
-1996.0,218822.0,ford,good,gas,automatic,SUV,red,2950
-2001.0,213000.0,jeep,fair,gas,automatic,SUV,red,3500
-2015.0,149894.0,nissan,excellent,gas,automatic,SUV,grey,11900
-2008.0,166526.0,mercedes-benz,excellent,gas,automatic,SUV,silver,9795
-2003.0,225000.0,chevrolet,fair,gas,automatic,truck,white,3500
-2002.0,236032.0,gmc,excellent,gas,automatic,SUV,silver,3500
-2010.0,224000.0,ram,good,gas,automatic,truck,blue,12200
-2008.0,209559.0,volvo,good,gas,automatic,SUV,black,4995
-2014.0,145769.0,acura,good,gas,automatic,SUV,black,12495
-2012.0,87964.0,jaguar,excellent,gas,automatic,sedan,green,18995
-2019.0,21980.0,ford,like new,gas,automatic,SUV,black,58500
-2006.0,199000.0,toyota,like new,hybrid,automatic,SUV,blue,4100
-2004.0,106021.0,jeep,excellent,gas,manual,offroad,black,12700
-2003.0,127000.0,volkswagen,good,gas,manual,hatchback,green,2800
-2004.0,245830.0,chevrolet,good,gas,automatic,truck,white,8650
-2016.0,99500.0,dodge,excellent,gas,automatic,SUV,grey,12000
-2014.0,161203.0,honda,excellent,gas,automatic,mini-van,grey,13950
-2015.0,111261.0,mercedes-benz,excellent,gas,automatic,SUV,silver,20888
-2015.0,100962.0,chevrolet,excellent,gas,automatic,sedan,white,8995
-2008.0,153251.0,bmw,excellent,gas,automatic,SUV,silver,6700
-2004.0,153300.0,chevrolet,excellent,gas,automatic,pickup,red,8900
-2012.0,107000.0,jeep,good,gas,automatic,SUV,green,10950
-2002.0,136000.0,saturn,good,gas,automatic,sedan,red,2995
-2006.0,167000.0,ford,new,gas,automatic,SUV,brown,6495
-2006.0,186410.0,jeep,good,gas,automatic,SUV,black,1500
-2011.0,121000.0,toyota,good,gas,automatic,truck,silver,16999
-2011.0,130000.0,acura,excellent,gas,automatic,sedan,black,9250
-2007.0,270000.0,chevrolet,fair,diesel,automatic,pickup,black,9900
-2004.0,158447.0,ram,good,gas,automatic,truck,red,8900
-2000.0,215000.0,toyota,fair,gas,automatic,SUV,silver,2500
-2006.0,133000.0,saturn,excellent,gas,manual,sedan,red,2995
-2013.0,75121.0,subaru,excellent,gas,automatic,SUV,red,12500
-2006.0,80435.0,lexus,excellent,gas,automatic,convertible,grey,21999
-2011.0,137950.0,chevrolet,excellent,gas,automatic,truck,grey,14995
-2012.0,99300.0,ford,excellent,gas,automatic,truck,red,23999
-2017.0,110971.0,volkswagen,excellent,gas,automatic,sedan,grey,12995
-2010.0,119000.0,acura,excellent,gas,automatic,sedan,grey,9300
-2009.0,119876.0,pontiac,excellent,gas,automatic,sedan,grey,5450
-2001.0,98563.0,toyota,excellent,gas,automatic,coupe,silver,5500
-2011.0,134000.0,infiniti,good,gas,automatic,sedan,grey,8800
-2015.0,68564.0,toyota,excellent,gas,automatic,pickup,white,32995
-2010.0,105700.0,audi,good,gas,automatic,sedan,blue,6800
-2014.0,42213.0,ford,good,gas,automatic,truck,white,35990
-1998.0,87000.0,honda,good,gas,manual,sedan,black,4900
-2005.0,233000.0,honda,fair,gas,automatic,sedan,silver,2500
-2017.0,28501.0,chevrolet,excellent,gas,automatic,sedan,white,21900
-2010.0,133223.0,subaru,good,gas,automatic,SUV,red,5250
-2018.0,8614.0,toyota,like new,gas,automatic,SUV,red,26995
-2009.0,154187.0,honda,excellent,gas,automatic,sedan,red,10999
-2016.0,76503.0,chevrolet,good,gas,automatic,SUV,red,13988
-2012.0,126000.0,volvo,excellent,gas,automatic,sedan,grey,6995
-1984.0,85000.0,ram,fair,gas,automatic,pickup,brown,8599
-2013.0,143000.0,ford,good,gas,automatic,pickup,white,15900
-2006.0,227656.0,toyota,salvage,gas,manual,hatchback,grey,2000
-1995.0,167000.0,ford,fair,gas,automatic,truck,blue,3200
-2009.0,106500.0,toyota,excellent,hybrid,automatic,hatchback,grey,7800
-2016.0,88501.0,ford,excellent,diesel,automatic,truck,black,55999
-2003.0,138197.0,cadillac,excellent,gas,automatic,SUV,brown,6500
-2005.0,140000.0,jeep,fair,gas,automatic,SUV,silver,2500
-2003.0,265000.0,ram,excellent,diesel,manual,truck,blue,16995
-2003.0,134950.0,saturn,excellent,gas,automatic,sedan,silver,3395
-2018.0,20000.0,honda,like new,gas,automatic,sedan,silver,20988
-2000.0,62000.0,mercedes-benz,excellent,gas,automatic,coupe,black,6000
-2005.0,239078.0,chevrolet,excellent,gas,automatic,SUV,green,3350
-2013.0,100981.0,chevrolet,good,gas,automatic,pickup,silver,19990
-2014.0,82000.0,fiat,like new,gas,automatic,hatchback,green,3800
-2002.0,154000.0,audi,excellent,gas,automatic,wagon,black,3000
-2009.0,140000.0,chevrolet,excellent,gas,automatic,SUV,blue,7995
-2002.0,82460.0,chevrolet,good,gas,automatic,pickup,red,8000
-2009.0,169000.0,ford,excellent,gas,manual,coupe,white,11975
-1999.0,102000.0,mercury,good,gas,automatic,sedan,blue,1850
-2017.0,21800.0,subaru,like new,gas,manual,sedan,silver,27000
-1999.0,156000.0,chevrolet,excellent,gas,automatic,SUV,red,12635
-2005.0,155862.0,lincoln,good,gas,automatic,sedan,black,1300
-2016.0,134896.0,jeep,excellent,gas,automatic,SUV,grey,19675
-2003.0,140200.0,ram,excellent,gas,automatic,pickup,blue,8995
-2013.0,123000.0,subaru,excellent,gas,automatic,wagon,grey,12995
-2012.0,129746.0,ford,good,gas,automatic,truck,white,12500
-2017.0,65523.0,volkswagen,excellent,gas,automatic,SUV,black,16999
-2010.0,135144.0,hyundai,excellent,gas,automatic,sedan,white,5995
-2017.0,111049.0,gmc,good,gas,automatic,truck,red,25995
-1986.0,161773.0,toyota,excellent,gas,automatic,pickup,white,8999
-2015.0,134020.0,ford,good,gas,automatic,truck,white,33995
-2014.0,142000.0,toyota,good,gas,automatic,sedan,blue,7750
-2018.0,20000.0,kia,excellent,gas,automatic,hatchback,white,13850
-2017.0,66022.0,ford,excellent,gas,automatic,convertible,red,25999
-2014.0,81000.0,honda,excellent,gas,automatic,sedan,black,7950
-2005.0,169629.0,lexus,excellent,gas,automatic,sedan,blue,6995
-1991.0,85537.0,cadillac,good,gas,automatic,sedan,blue,4995
-2007.0,131000.0,bmw,good,gas,automatic,sedan,grey,8395
+price,year,manufacturer,condition,fuel,odometer,transmission,type,paint_color
+29590,2017.0,ford,good,gas,70760.0,other,suv,blue
+14000,2016.0,buick,excellent,gas,71535.0,automatic,sedan,black
+1800,2000.0,ford,good,gas,128000.0,manual,coupe,blue
+16995,2017.0,ford,excellent,gas,65000.0,automatic,van,white
+13985,2012.0,mercedes-benz,excellent,gas,76873.0,automatic,coupe,white
+26590,2020.0,honda,good,gas,9954.0,other,coupe,silver
+14995,2005.0,toyota,good,gas,175015.0,other,truck,green
+10700,2008.0,toyota,excellent,gas,183100.0,automatic,pickup,red
+10950,2017.0,volkswagen,excellent,gas,60352.0,automatic,sedan,red
+35590,2020.0,volkswagen,good,gas,3984.0,other,sedan,black
+10233,2012.0,ford,excellent,hybrid,104644.0,automatic,sedan,grey
+24500,2008.0,chevrolet,excellent,gas,81000.0,automatic,truck,white
+30000,2012.0,toyota,excellent,gas,82000.0,automatic,truck,blue
+24900,2017.0,jeep,excellent,gas,44000.0,automatic,suv,black
+1500,2000.0,toyota,good,gas,180000.0,automatic,sedan,black
+25990,2014.0,chevrolet,good,other,82140.0,automatic,pickup,black
+41990,2020.0,ford,good,gas,561.0,other,coupe,white
+67003,2021.0,ram,new,gas,34.0,automatic,van,grey
+15500,2000.0,ford,excellent,gas,34908.0,automatic,other,white
+7999,2009.0,honda,good,gas,128666.0,automatic,sedan,green
+15990,2010.0,ford,good,gas,48055.0,other,pickup,silver
+33590,2014.0,toyota,good,other,55251.0,other,pickup,red
+25990,2018.0,acura,good,gas,38619.0,other,other,blue
+27995,2012.0,ford,excellent,gas,69750.0,automatic,pickup,white
+5995,2010.0,mercury,like new,gas,126495.0,automatic,sedan,silver
+4400,2008.0,mercury,good,gas,122352.0,automatic,sedan,blue
+17990,2017.0,nissan,good,gas,43094.0,other,hatchback,black
+2495,2019.0,toyota,like new,gas,52583.0,automatic,sedan,custom
+18990,2019.0,dodge,good,other,5378.0,other,suv,white
+28990,2020.0,chevrolet,good,gas,18791.0,other,suv,white
+44995,2014.0,chevrolet,good,gas,35091.0,manual,coupe,silver
+6499,1997.0,pontiac,good,gas,111412.0,automatic,coupe,black
+10999,2008.0,toyota,good,gas,168545.0,automatic,suv,blue
+2995,2007.0,chevrolet,good,gas,166000.0,automatic,sedan,silver
+12800,2014.0,ford,like new,gas,14100.0,automatic,sedan,red
+48999,2021.0,toyota,new,electric,1200.0,automatic,suv,white
+36590,2019.0,volvo,good,gas,7618.0,other,sedan,white
+12995,2012.0,chevrolet,excellent,gas,94350.0,automatic,pickup,white
+37888,2004.0,ford,good,gas,27968.0,automatic,truck,black
+35990,2019.0,ram,good,gas,8920.0,other,pickup,black
+39990,2017.0,infiniti,good,gas,41664.0,automatic,other,black
+26990,1998.0,mitsubishi,good,diesel,166302.0,manual,truck,white
+34990,2016.0,gmc,good,gas,34425.0,other,pickup,red
+5999,2004.0,bmw,excellent,gas,132090.0,automatic,suv,white
+6500,1999.0,bmw,excellent,gas,176000.0,automatic,convertible,grey
+6500,2014.0,ford,like new,gas,114452.0,automatic,sedan,grey
+15000,1996.0,ford,good,gas,52686.0,manual,truck,white
+22590,2012.0,chevrolet,good,other,99554.0,other,pickup,black
+4950,2001.0,lexus,like new,gas,221000.0,automatic,sedan,silver
+28900,2018.0,bmw,good,gas,15600.0,automatic,wagon,blue
+14900,2011.0,lexus,excellent,gas,65441.0,automatic,sedan,black
+25590,2017.0,toyota,good,gas,30870.0,other,sedan,silver
+13590,2012.0,honda,good,gas,87338.0,other,coupe,blue
+8900,2015.0,nissan,excellent,gas,63168.0,automatic,hatchback,blue
+15800,2016.0,subaru,like new,gas,70678.0,automatic,wagon,silver
+3600,2008.0,ford,excellent,gas,170000.0,automatic,suv,green
+7200,2012.0,nissan,excellent,gas,115000.0,automatic,hatchback,black
+19999,2015.0,rover,like new,gas,107270.0,automatic,hatchback,blue
+14900,2012.0,rover,excellent,gas,128114.0,automatic,suv,black
+41590,2020.0,jaguar,good,gas,9344.0,other,suv,red
+7995,2010.0,toyota,good,gas,209368.0,automatic,suv,grey
+26590,2013.0,infiniti,good,gas,38468.0,automatic,other,black
+33990,2017.0,dodge,good,gas,34020.0,other,coupe,orange
+9981,2016.0,ford,excellent,gas,82826.0,automatic,sedan,grey
+14999,2015.0,lincoln,excellent,gas,85200.0,automatic,suv,silver
+37590,2020.0,dodge,good,gas,1937.0,other,coupe,green
+20000,2016.0,mercedes-benz,excellent,gas,91414.0,automatic,van,white
+1200,2002.0,nissan,fair,gas,227600.0,automatic,sedan,black
+19590,2014.0,acura,good,gas,18521.0,other,sedan,white
+4795,2001.0,chevrolet,excellent,gas,141005.0,automatic,pickup,black
+31990,2020.0,mitsubishi,good,hybrid,3101.0,other,other,black
+9000,2000.0,ford,fair,diesel,209000.0,manual,truck,white
+31590,2020.0,acura,good,gas,989.0,other,sedan,white
+41590,2019.0,volvo,good,gas,22067.0,other,sedan,blue
+5995,2002.0,acura,good,gas,160218.0,automatic,sedan,blue
+39990,2016.0,dodge,good,gas,4029.0,other,coupe,black
+6000,2007.0,nissan,excellent,gas,127882.0,automatic,suv,white
+5150,2012.0,jeep,excellent,gas,113000.0,automatic,suv,white
+18590,2014.0,jeep,good,gas,33212.0,other,other,black
+32990,2019.0,ram,good,gas,3991.0,other,pickup,white
+17995,2004.0,ford,excellent,diesel,128000.0,automatic,truck,black
+26500,2013.0,ford,excellent,gas,126510.0,automatic,pickup,green
+25990,2019.0,ram,good,gas,12302.0,other,pickup,white
+65955,2017.0,ford,like new,diesel,83120.0,automatic,truck,white
+7500,2006.0,mercedes-benz,excellent,diesel,95000.0,automatic,sedan,silver
+13495,2011.0,jeep,like new,gas,155900.0,automatic,suv,red
+39590,2018.0,toyota,good,gas,34199.0,other,other,red
+22000,2002.0,ford,good,diesel,223738.0,automatic,pickup,grey
+8500,2015.0,hyundai,excellent,gas,80000.0,automatic,sedan,white
+9495,2013.0,mazda,good,gas,140672.0,automatic,suv,silver
+29990,2016.0,chevrolet,good,gas,17302.0,other,pickup,red
+11500,2009.0,porsche,excellent,gas,119000.0,automatic,suv,purple
+5500,2006.0,chrysler,like new,gas,159000.0,automatic,suv,black
+31990,2017.0,gmc,good,gas,31496.0,automatic,pickup,black
+27990,2020.0,ford,good,gas,10688.0,other,pickup,white
+23995,2018.0,chevrolet,excellent,gas,93839.0,automatic,suv,white
+6995,2011.0,ford,good,gas,110000.0,automatic,sedan,custom
+17990,2013.0,toyota,excellent,gas,84864.0,automatic,sedan,custom
+35590,2011.0,dodge,good,gas,16796.0,other,coupe,green
+3995,2004.0,volvo,excellent,gas,254484.0,automatic,wagon,silver
+21990,2013.0,toyota,good,other,77018.0,other,pickup,red
+33950,2017.0,ford,good,gas,15396.0,automatic,van,white
+3800,2007.0,honda,like new,gas,170000.0,automatic,other,silver
+24900,2003.0,ford,like new,gas,1567.0,automatic,truck,white
+2000,2009.0,ford,good,gas,175000.0,automatic,other,red
+30000,2016.0,jeep,excellent,gas,58300.0,automatic,suv,silver
+3500,2008.0,ford,good,gas,187000.0,automatic,sedan,silver
+42990,2017.0,cadillac,good,gas,40971.0,other,coupe,black
+17990,2017.0,hyundai,good,electric,44162.0,other,hatchback,black
+65000,2020.0,lincoln,like new,gas,19000.0,automatic,suv,white
+9200,2011.0,ford,excellent,gas,166481.0,manual,coupe,grey
+29590,2014.0,ram,good,diesel,73040.0,other,pickup,silver
+34590,2020.0,infiniti,good,other,3542.0,other,hatchback,brown
+10000,2007.0,nissan,good,gas,165700.0,automatic,suv,grey
+12950,2008.0,bmw,good,gas,82190.0,automatic,convertible,blue
+29990,2012.0,chevrolet,excellent,gas,40321.0,automatic,pickup,white
+14750,2003.0,ford,excellent,gas,120200.0,automatic,pickup,white
+8988,2012.0,chrysler,like new,gas,119516.0,automatic,mini-van,white
+20990,2018.0,acura,good,other,18972.0,other,sedan,silver
+34500,2019.0,ram,excellent,gas,81654.0,automatic,van,white
+7900,2015.0,ford,good,gas,100000.0,manual,coupe,white
+10500,2010.0,mercedes-benz,good,gas,90000.0,automatic,sedan,blue
+24900,2013.0,chevrolet,excellent,gas,113000.0,automatic,truck,white
+13590,2010.0,kia,good,other,94587.0,other,wagon,black
+24995,2018.0,jeep,like new,gas,18938.0,automatic,suv,silver
+2695,2008.0,toyota,good,hybrid,170127.0,automatic,hatchback,green
+13950,2017.0,honda,excellent,gas,38000.0,automatic,sedan,grey
+13590,2012.0,volvo,good,gas,72489.0,other,sedan,black
+8200,2008.0,bmw,good,gas,132337.0,automatic,coupe,red
+6495,2006.0,buick,excellent,gas,104680.0,automatic,sedan,green
+31000,2018.0,mercedes-benz,like new,gas,37943.0,automatic,sedan,black
+10500,2013.0,chevrolet,excellent,gas,80000.0,automatic,sedan,black
+39590,2019.0,ram,good,gas,55804.0,other,pickup,brown
+10500,1998.0,ford,excellent,gas,58600.0,manual,convertible,yellow
+7800,2012.0,hyundai,excellent,gas,44600.0,automatic,wagon,silver
+33990,2013.0,gmc,good,other,34413.0,other,pickup,red
+9910,2010.0,honda,excellent,gas,109534.0,automatic,sedan,black
+23995,2012.0,ford,excellent,gas,91000.0,automatic,pickup,white
+12995,2009.0,chevrolet,excellent,gas,129039.0,automatic,suv,black
+11995,2007.0,bmw,excellent,gas,98202.0,automatic,convertible,black
+4350,2009.0,volkswagen,good,gas,164000.0,automatic,wagon,silver
+10942,2013.0,ford,good,other,96704.0,automatic,other,green
+900,2002.0,volvo,fair,gas,181390.0,automatic,wagon,brown
+38590,2020.0,toyota,good,gas,9783.0,other,sedan,white
+4950,2005.0,pontiac,excellent,gas,108000.0,automatic,hatchback,blue
+9999,2006.0,bmw,good,gas,83.0,automatic,sedan,grey
+7500,2008.0,toyota,good,gas,135500.0,manual,truck,white
+19999,2018.0,honda,like new,gas,46379.0,automatic,sedan,red
+28990,2016.0,chevrolet,like new,gas,118630.0,automatic,truck,white
+3500,2001.0,ram,good,gas,167000.0,automatic,truck,red
+25900,2016.0,mercedes-benz,like new,gas,44670.0,automatic,sedan,black
+11990,2016.0,chrysler,excellent,gas,113643.0,automatic,mini-van,blue
+37990,2019.0,bmw,good,gas,13537.0,automatic,suv,black
+35990,2020.0,ford,good,gas,3928.0,other,pickup,blue
+27990,2012.0,toyota,good,gas,67245.0,other,pickup,silver
+19487,2012.0,chevrolet,good,gas,14343.0,automatic,van,green
+14000,2002.0,mercedes-benz,excellent,gas,29000.0,manual,convertible,silver
+27900,2016.0,jeep,excellent,gas,93000.0,automatic,wagon,white
+33990,2007.0,chevrolet,good,gas,77581.0,automatic,truck,white
+23999,2016.0,ford,excellent,gas,33500.0,automatic,van,white
+21590,2019.0,mitsubishi,good,gas,10844.0,other,hatchback,blue
+9900,2008.0,mercedes-benz,like new,gas,61000.0,automatic,sedan,brown
+2800,2004.0,honda,good,gas,228000.0,automatic,mini-van,brown
+5990,2013.0,ford,excellent,gas,151094.0,automatic,sedan,silver
+24590,2017.0,chevrolet,good,gas,40784.0,other,pickup,white
+14590,2012.0,kia,good,other,82307.0,other,suv,silver
+24999,2018.0,honda,like new,gas,14800.0,automatic,suv,white
+35590,2020.0,cadillac,good,other,14753.0,other,sedan,black
+29990,2018.0,chevrolet,good,gas,11401.0,other,pickup,red
+6900,2009.0,toyota,excellent,gas,139000.0,automatic,sedan,white
+43791,2017.0,chevrolet,good,gas,46633.0,automatic,pickup,white
+5499,2011.0,hyundai,excellent,gas,120528.0,manual,sedan,silver
+1995,2004.0,toyota,like new,gas,200000.0,automatic,suv,black
+15995,2018.0,chevrolet,good,gas,35849.0,automatic,sedan,black
+27990,2018.0,mazda,good,gas,6745.0,other,convertible,black
+600,2009.0,hyundai,good,gas,160000.0,automatic,sedan,silver
+15750,2011.0,jeep,excellent,gas,131516.0,automatic,suv,black
+28990,2018.0,audi,good,gas,41267.0,other,sedan,silver
+27590,2016.0,lexus,good,gas,19064.0,automatic,hatchback,brown
+17590,2012.0,infiniti,good,other,88714.0,automatic,sedan,white
+44990,2019.0,mercedes-benz,good,other,14998.0,other,coupe,black
+36590,2020.0,cadillac,good,gas,9350.0,other,hatchback,white
+1995,2011.0,ford,excellent,gas,100000.0,automatic,sedan,silver
+21000,2017.0,ford,excellent,gas,70000.0,automatic,van,white
+5750,2003.0,cadillac,excellent,gas,104000.0,automatic,sedan,custom
+18990,2018.0,hyundai,good,gas,16789.0,other,sedan,white
+32000,2015.0,ford,excellent,diesel,80000.0,automatic,pickup,white
+7970,2011.0,honda,good,gas,173836.0,automatic,sedan,grey
+8477,2008.0,infiniti,excellent,gas,160000.0,manual,coupe,silver
+4250,2005.0,honda,excellent,gas,173000.0,automatic,mini-van,blue
+7000,2001.0,chevrolet,good,gas,126918.0,automatic,van,blue
+18990,2018.0,hyundai,good,gas,16789.0,other,sedan,white
+2100,2000.0,ford,good,gas,124000.0,automatic,sedan,silver
+3800,2005.0,ford,good,gas,180000.0,automatic,suv,white
+27990,2017.0,toyota,excellent,gas,1000.0,automatic,truck,black
+5500,2008.0,mazda,good,gas,161891.0,automatic,suv,grey
+5900,2012.0,mazda,good,gas,124802.0,automatic,hatchback,grey
+8500,2011.0,audi,excellent,gas,142113.0,automatic,sedan,grey
+24500,2019.0,subaru,like new,gas,340.0,automatic,suv,white
+28590,2017.0,chevrolet,good,gas,102.0,other,pickup,red
+42900,2018.0,tesla,excellent,electric,46917.0,automatic,sedan,silver
+2350,2002.0,buick,excellent,gas,220133.0,automatic,suv,blue
+1800,2002.0,chevrolet,good,gas,111088.0,automatic,truck,green
+13995,2011.0,ford,excellent,gas,58000.0,automatic,coupe,black
+27860,2014.0,gmc,like new,gas,95000.0,automatic,truck,brown
+5499,2007.0,chevrolet,good,gas,100000.0,automatic,sedan,red
+33590,2014.0,toyota,good,other,55251.0,other,pickup,red
+19900,2019.0,kia,excellent,gas,33874.0,automatic,suv,silver
+31990,2018.0,lincoln,good,gas,31087.0,automatic,suv,white
+5300,2007.0,kia,excellent,gas,115874.0,automatic,suv,white
+10950,2007.0,toyota,excellent,gas,221600.0,automatic,truck,black
+30990,2015.0,ford,good,other,44830.0,other,pickup,red
+37995,2019.0,chevrolet,excellent,gas,72759.0,automatic,truck,silver
+30750,2015.0,lexus,like new,gas,99500.0,automatic,suv,silver
+12500,2010.0,ram,excellent,gas,141224.0,automatic,truck,white
+28900,2017.0,nissan,excellent,gas,76912.0,automatic,truck,black
+6988,2012.0,buick,excellent,gas,109468.0,automatic,sedan,silver
+7800,2010.0,honda,excellent,gas,129000.0,automatic,sedan,black
+8500,2006.0,toyota,good,gas,65100.0,automatic,sedan,silver
+18000,2008.0,ford,like new,diesel,192000.0,automatic,truck,white
+20990,2020.0,chevrolet,good,other,8828.0,other,hatchback,silver
+6995,2008.0,honda,good,gas,200201.0,automatic,suv,blue
+7995,2008.0,ford,excellent,gas,155963.0,automatic,suv,white
+12899,2012.0,jeep,excellent,gas,90673.0,automatic,suv,red
+26499,2020.0,dodge,good,gas,24672.0,automatic,van,blue
+27590,2017.0,alfa-romeo,good,gas,27680.0,other,sedan,black
+6495,2009.0,honda,good,gas,152000.0,automatic,sedan,grey
+22900,2005.0,chevrolet,excellent,gas,75000.0,manual,convertible,black
+4500,2010.0,ford,fair,gas,151000.0,automatic,sedan,black
+16999,2018.0,subaru,like new,gas,22000.0,automatic,sedan,red
+18995,2014.0,ford,good,gas,120000.0,automatic,truck,white
+8500,2004.0,chevrolet,excellent,gas,132000.0,automatic,truck,silver
+23998,2015.0,chevrolet,like new,gas,1.0,automatic,truck,grey
+32900,2019.0,ford,like new,gas,16524.0,automatic,van,white
+12999,2014.0,jeep,like new,gas,102000.0,automatic,suv,white
+4950,2009.0,toyota,like new,gas,145000.0,automatic,sedan,silver
+18990,2017.0,honda,good,gas,31488.0,other,sedan,red
+1995,2006.0,volvo,good,gas,223000.0,automatic,suv,blue
+8495,2012.0,jeep,excellent,gas,129462.0,automatic,suv,grey
+4500,2003.0,buick,good,gas,167000.0,automatic,suv,blue
+41990,2020.0,lexus,good,gas,8104.0,other,sedan,white
+16995,2014.0,bmw,excellent,gas,75769.0,automatic,suv,white
+35000,2018.0,ram,excellent,gas,43827.0,automatic,pickup,white
+23990,2007.0,chevrolet,good,gas,32853.0,automatic,truck,white
+28590,2019.0,nissan,good,other,21939.0,other,pickup,white
+8500,2013.0,nissan,like new,gas,127000.0,automatic,coupe,white
+43900,2017.0,mercedes-benz,good,gas,34500.0,automatic,sedan,blue
+5400,2009.0,honda,excellent,gas,160988.0,automatic,sedan,blue
+28995,2014.0,ford,excellent,gas,81014.0,automatic,pickup,silver
+11500,2015.0,nissan,excellent,gas,78000.0,automatic,sedan,white
+38495,2019.0,toyota,excellent,gas,28000.0,automatic,truck,red
+5495,2010.0,honda,good,gas,137155.0,automatic,coupe,blue
+9885,2011.0,chevrolet,good,gas,77225.0,automatic,sedan,white
+39990,2019.0,chevrolet,good,gas,9802.0,other,pickup,black
+26990,2016.0,ford,good,diesel,201035.0,automatic,truck,white
+20990,2020.0,honda,good,gas,1668.0,other,hatchback,white
+33900,2011.0,ram,excellent,diesel,162139.0,automatic,pickup,black
+19985,2013.0,mercedes-benz,excellent,gas,129386.0,automatic,suv,white
+9900,2010.0,ford,excellent,gas,139109.0,automatic,suv,black
+21590,2017.0,buick,good,gas,14934.0,other,sedan,white
+5995,2012.0,fiat,like new,gas,58146.0,manual,coupe,grey
+17590,2017.0,jeep,good,gas,37117.0,other,other,white
+21995,2014.0,bmw,excellent,gas,85558.0,automatic,other,white
+5895,2006.0,ford,excellent,gas,129055.0,automatic,pickup,blue
+7995,2005.0,honda,excellent,gas,201265.0,automatic,suv,red
+3500,2010.0,toyota,good,gas,209000.0,automatic,coupe,silver
+13900,2003.0,chevrolet,excellent,gas,153000.0,automatic,truck,white
+28590,2018.0,audi,good,gas,35036.0,other,suv,black
+16990,2014.0,toyota,good,hybrid,60598.0,other,other,silver
+40990,2014.0,chevrolet,good,gas,53263.0,other,pickup,white
+15999,2017.0,subaru,like new,gas,24000.0,automatic,wagon,blue
+35590,2018.0,jaguar,good,other,14991.0,other,other,black
+19590,2014.0,mercedes-benz,good,gas,60091.0,automatic,sedan,silver
+2600,2006.0,nissan,good,gas,150000.0,automatic,sedan,blue
+9900,2010.0,ford,excellent,gas,139109.0,automatic,suv,black
+12995,2016.0,ford,excellent,gas,89066.0,automatic,suv,silver
+18990,2018.0,kia,good,other,21036.0,other,wagon,white
+29990,2017.0,jeep,good,gas,49955.0,other,other,black
+39990,2020.0,acura,good,gas,1237.0,other,other,white
+33990,2011.0,bmw,good,gas,52294.0,other,coupe,black
+13900,2015.0,volkswagen,excellent,gas,97354.0,automatic,hatchback,grey
+17950,2004.0,pontiac,excellent,gas,61174.0,other,coupe,red
+16995,2016.0,jeep,good,gas,35446.0,automatic,other,blue
+3995,2012.0,ford,good,gas,133432.0,automatic,hatchback,black
+3200,2005.0,hyundai,good,gas,180000.0,automatic,suv,silver
+6990,2009.0,volvo,good,gas,161753.0,automatic,suv,grey
+10000,2012.0,bmw,excellent,gas,150700.0,automatic,sedan,blue
+26995,2012.0,ford,excellent,gas,105478.0,automatic,pickup,black
+28990,2017.0,infiniti,good,other,15868.0,other,coupe,blue
+5500,2007.0,gmc,good,gas,118000.0,automatic,suv,red
+2650,2004.0,buick,good,gas,100000.0,manual,suv,red
+17590,2012.0,honda,good,gas,30613.0,other,other,silver
+799,2002.0,dodge,good,gas,100000.0,automatic,pickup,silver
+4000,2012.0,nissan,excellent,gas,190970.0,manual,hatchback,red
+5900,2012.0,nissan,good,gas,144000.0,automatic,sedan,white
+39995,2017.0,ford,like new,gas,98899.0,automatic,truck,white
+6495,2008.0,volkswagen,excellent,gas,79837.0,manual,hatchback,black
+22900,2011.0,bmw,excellent,gas,58172.0,manual,convertible,silver
+12900,2014.0,ford,excellent,gas,90480.0,automatic,sedan,white
+36990,2019.0,rover,good,other,31161.0,other,other,black
