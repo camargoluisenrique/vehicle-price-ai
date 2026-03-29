@@ -8,3 +8,4 @@ __pycache__/
 data/archive/
 *.zip
 data/vehicles.csv
+data/vehicles_full.csv
