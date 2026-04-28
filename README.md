@@ -1,13 +1,13 @@
-# 🚗 Vehicle Price AI
+# Vehicle Price AI
 
 Machine Learning web application to predict used vehicle prices based on structured data.
 
-🔗 **Live Demo:** https://vehicle-price-ai.onrender.com  
-📂 **Repository:** https://github.com/camargoluisenrique/vehicle-price-ai  
+ **Live Demo:** https://vehicle-price-ai.onrender.com  
+ **Repository:** https://github.com/camargoluisenrique/vehicle-price-ai  
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project builds an end-to-end Machine Learning system capable of predicting vehicle prices using real-world data.
 
@@ -21,18 +21,18 @@ It includes:
 
 ---
 
-## 🚀 Features
+## Features
 
-- 💰 Price prediction in real time  
-- 📊 Model performance metrics (MAE, RMSE)  
-- 🧠 Feature importance visualization  
-- 📦 Optimized dataset preview  
-- 🌎 Public deployment (Render)  
-- 💱 USD → MXN conversion  
+-  Price prediction in real time  
+-  Model performance metrics (MAE, RMSE)  
+-  Feature importance visualization  
+-  Optimized dataset preview  
+-  Public deployment (Render)  
+-  USD → MXN conversion  
 
 ---
 
-## 📊 Model Performance
+##  Model Performance
 
 | Metric | Value |
 |------|------|
@@ -41,7 +41,7 @@ It includes:
 
 ---
 
-## 📸 Application Preview
+##  Application Preview
 
 ![Main App](images/app1.png)
 
@@ -53,7 +53,7 @@ It includes:
 
 ---
 
-## 🧠 Machine Learning Pipeline
+##  Machine Learning Pipeline
 
 1. Data Cleaning (missing values, filtering)
 2. Feature Engineering
@@ -64,7 +64,7 @@ It includes:
 
 ---
 
-## 📂 Dataset
+##  Dataset
 
 - Source: Kaggle (used vehicles dataset)
 - Cleaned dataset: `clean_data.csv`
@@ -72,7 +72,7 @@ It includes:
 
 ---
 
-## 🚀 Business Impact
+##  Business Impact
 
 This model can be used by:
 
@@ -86,7 +86,7 @@ This model can be used by:
 
 ---
 
-## 🎯 Final Result
+##  Final Result
 
 - Predicts vehicle prices in real time  
 - Handles structured data inputs  
@@ -95,7 +95,7 @@ This model can be used by:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Python
 - Pandas / NumPy
@@ -106,7 +106,7 @@ This model can be used by:
 
 ---
 
-## ⚙️ Run Locally
+##  Run Locally
 
 ```bash
 git clone https://github.com/camargoluisenrique/vehicle-price-ai.git
@@ -122,7 +122,7 @@ streamlit run app.py
 
 ---
 
-👤 Author
+ Author
 
 Luis Enrique Camargo    |   
 Data Scientist | Machine Learning Engineer
