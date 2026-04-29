@@ -1,15 +1,15 @@
 # Vehicle Price AI
 
-Este proyecto lo desarrollé para analizar cómo diferentes variables influyen en el precio de vehículos usados y qué tan bien se pueden modelar con machine learning en un entorno real.
+This project was developed to analyze how different variables influence used vehicle prices and how effectively they can be modeled using machine learning in a real-world scenario.
 
-Incluye desde el análisis de datos hasta un modelo desplegado en producción con Streamlit.
+It covers the full pipeline from data analysis to a deployed model using Streamlit.
 
- **Live Demo:** https://vehicle-price-ai.onrender.com  
- **Repository:** https://github.com/camargoluisenrique/vehicle-price-ai  
+**Live Demo:** https://vehicle-price-ai.onrender.com  
+**Repository:** https://github.com/camargoluisenrique/vehicle-price-ai  
 
 ---
 
-## Enfoque del proyecto
+## Project Approach
 
 Más que solo entrenar un modelo, el objetivo fue construir un flujo completo:
 
@@ -33,7 +33,9 @@ El foco estuvo en balancear simplicidad, interpretabilidad y desempeño.
 
 ---
 
-##  Model Performance
+## Model Performance
+
+Model evaluated on test dataset:
 
 | Metric | Value |
 |------|------|
@@ -43,6 +45,8 @@ El foco estuvo en balancear simplicidad, interpretabilidad y desempeño.
 ---
 
 ## Application (real usage)
+
+Real screenshots from the deployed application:
 
 ![Main App](images/app1.png)
 
@@ -77,7 +81,7 @@ The workflow followed in this project:
 ---
 
 
-## Resultado
+## Results
 
 Se obtuvo un modelo capaz de estimar precios con un error razonable para este tipo de dataset.
 
@@ -89,13 +93,13 @@ Más importante que la métrica final, este proyecto me permitió entender:
 
 ---
 
-## Problemas encontrados
+## Challenges
 
 - Overfitting en modelos más complejos
 - Variables categóricas con alta cardinalidad
 - Ruido en el dataset
 
-## Mejoras futuras
+## Future Improvements
 
 - Feature engineering más profundo
 - Probar modelos como XGBoost o LightGBM
@@ -140,5 +144,5 @@ streamlit run app.py
 
  Author
 
-Luis Enrique Camargo    |   
-Data Scientist | Machine Learning (Applied)
+Luis Enrique Camargo  
+Data Scientist | Applied Machine Learning | Python
