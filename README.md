@@ -22,14 +22,14 @@ Más que solo entrenar un modelo, el objetivo fue construir un flujo completo:
 El foco estuvo en balancear simplicidad, interpretabilidad y desempeño.
 ---
 
-## Features
+## Key Features
 
--  Price prediction in real time  
--  Model performance metrics (MAE, RMSE)  
--  Feature importance visualization  
--  Optimized dataset preview  
--  Public deployment (Render)  
--  USD → MXN conversion  
+- Real-time price prediction  
+- Model performance metrics (MAE, RMSE)  
+- Feature importance visualization  
+- Dataset preview  
+- Deployment on Render  
+- USD → MXN conversion    
 
 ---
 
@@ -42,7 +42,7 @@ El foco estuvo en balancear simplicidad, interpretabilidad y desempeño.
 
 ---
 
-##  Application Preview
+## Application (real usage)
 
 ![Main App](images/app1.png)
 
@@ -54,14 +54,17 @@ El foco estuvo en balancear simplicidad, interpretabilidad y desempeño.
 
 ---
 
-##  Machine Learning Pipeline
+## Modeling Process
 
-1. Data Cleaning (missing values, filtering)
-2. Feature Engineering
-3. Categorical Encoding (OneHotEncoder)
-4. Model Training (Random Forest Regressor)
-5. Evaluation (MAE, RMSE)
-6. Deployment (Streamlit + Docker + Render)
+The workflow followed in this project:
+
+1. Data cleaning and filtering
+2. Exploratory Data Analysis (EDA)
+3. Feature engineering
+4. Encoding categorical variables
+5. Model training (Random Forest)
+6. Evaluation using MAE and RMSE
+7. Deployment with Streamlit
 
 ---
 
@@ -100,6 +103,14 @@ Más importante que la métrica final, este proyecto me permitió entender:
 
 ---
 
+## Key Learnings
+
+- Simpler models can perform competitively with proper preprocessing  
+- Feature selection has a strong impact on performance  
+- Real-world datasets introduce noise that affects predictions
+
+---
+
 ##  Tech Stack
 
 - Python
@@ -130,4 +141,4 @@ streamlit run app.py
  Author
 
 Luis Enrique Camargo    |   
-Data Scientist | Applied Machine Learning
+Data Scientist | Machine Learning (Applied)
