@@ -10,11 +10,15 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 
 # =========================================
-# PATHS
+# PATHS (FIXED)
 # =========================================
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 DATA_PATH = os.path.join(BASE_DIR, "data", "clean_data.csv")
-MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "outputs", "models", "model.pkl")
+
+# asegurar que exista carpeta de modelos
+os.makedirs(os.path.dirname(MODEL_PATH), exist_ok=True)
 
 # =========================================
 # FEATURES
@@ -69,7 +73,7 @@ def train_and_save_model():
 
     joblib.dump(model, MODEL_PATH)
 
-    print("✅ Modelo entrenado y guardado en model.pkl")
+    print(f"✅ Model saved at: {MODEL_PATH}")
 
     return model
 

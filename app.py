@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
+import altair as alt
 
-from model import (
+from src.model import (
     load_model,
     predict_price,
     evaluate_model,
@@ -85,10 +86,10 @@ if st.button("Predict Price"):
     mxn = usd * 17
 
     st.success(f"💰 Estimated Price: ${usd:,.2f} USD")
-    st.info(f"🇲🇽 Precio estimado: ${mxn:,.2f} MXN")
+    st.info(f"🇲🇽 Estimated Price: ${mxn:,.2f} MXN")
 
 # =========================
-# FEATURE IMPORTANCE (FIX)
+# FEATURE IMPORTANCE
 # =========================
 importance_df = get_feature_importance(model)
 
@@ -98,15 +99,16 @@ if importance_df is not None:
 
     top_features = importance_df.head(10)
 
-    # tabla
     st.dataframe(top_features)
 
-    # gráfica corregida (SIN ERROR)
-    st.bar_chart(
-        data=top_features,
-        x="feature",
-        y="importance"
-    )
+   
+
+chart = alt.Chart(top_features).mark_bar().encode(
+    x=alt.X("importance:Q"),
+    y=alt.Y("feature:N", sort="-x")
+)
+
+st.altair_chart(chart, use_container_width=True)
 
 # =========================
 # DATASET VIEW
