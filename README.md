@@ -11,15 +11,16 @@ It covers the full pipeline from data analysis to a deployed model using Streaml
 
 ## Project Approach
 
-Más que solo entrenar un modelo, el objetivo fue construir un flujo completo:
+Rather than just training a model, the goal was to build a complete workflow:
 
-- entender el dataset (EDA)
-- identificar variables relevantes
-- comparar modelos
-- validar resultados
-- desplegar una versión funcional accesible
+- Understand the dataset (EDA)
+- Identify relevant variables
+- Compare different models
+- Validate results
+- Deploy a functional and accessible application
 
-El foco estuvo en balancear simplicidad, interpretabilidad y desempeño.
+The focus was on balancing simplicity, interpretability, and performance.
+
 ---
 
 ## Key Features
@@ -83,27 +84,27 @@ The workflow followed in this project:
 
 ## Results
 
-Se obtuvo un modelo capaz de estimar precios con un error razonable para este tipo de dataset.
+A model capable of estimating vehicle prices with a reasonable error for this type of dataset was obtained.
 
-Más importante que la métrica final, este proyecto me permitió entender:
+More importantly, this project helped me understand:
 
-- qué variables realmente aportan valor
-- cómo se comportan distintos modelos
-- dónde aparecen problemas como overfitting
+- Which variables actually add value
+- How different models behave
+- Where issues like overfitting appear
 
 ---
 
 ## Challenges
 
-- Overfitting en modelos más complejos
-- Variables categóricas con alta cardinalidad
-- Ruido en el dataset
+- Overfitting in more complex models
+- High cardinality in categorical variables
+- Noise present in the dataset
 
 ## Future Improvements
 
-- Feature engineering más profundo
-- Probar modelos como XGBoost o LightGBM
-- Mejor validación del modelo
+- More advanced feature engineering
+- Testing models such as XGBoost or LightGBM
+- Improving model validation
 
 ---
 
