@@ -53,9 +53,9 @@ Real screenshots from the deployed application:
 
 ![Prediction](images/app2.png)
 
-![Feature Importance](images/app3.png)
+![Feature Importance](images/app_feature_importance.png)
 
-![Dataset Preview](images/app4.png)
+![Dataset Preview](images/app8.png)
 
 ---
 
