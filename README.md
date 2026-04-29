@@ -1,24 +1,25 @@
 # Vehicle Price AI
 
-Machine Learning web application to predict used vehicle prices based on structured data.
+Este proyecto lo desarrollé para analizar cómo diferentes variables influyen en el precio de vehículos usados y qué tan bien se pueden modelar con machine learning en un entorno real.
+
+Incluye desde el análisis de datos hasta un modelo desplegado en producción con Streamlit.
 
  **Live Demo:** https://vehicle-price-ai.onrender.com  
  **Repository:** https://github.com/camargoluisenrique/vehicle-price-ai  
 
 ---
 
-## Overview
+## Enfoque del proyecto
 
-This project builds an end-to-end Machine Learning system capable of predicting vehicle prices using real-world data.
+Más que solo entrenar un modelo, el objetivo fue construir un flujo completo:
 
-It includes:
+- entender el dataset (EDA)
+- identificar variables relevantes
+- comparar modelos
+- validar resultados
+- desplegar una versión funcional accesible
 
-- Data preprocessing pipeline
-- Model training and evaluation
-- Feature importance analysis
-- Interactive web interface (Streamlit)
-- Cloud deployment (Render)
-
+El foco estuvo en balancear simplicidad, interpretabilidad y desempeño.
 ---
 
 ## Features
@@ -72,26 +73,30 @@ It includes:
 
 ---
 
-##  Business Impact
 
-This model can be used by:
+## Resultado
 
-- Car marketplaces  
-- Dealerships  
-- Buyers to estimate fair prices  
+Se obtuvo un modelo capaz de estimar precios con un error razonable para este tipo de dataset.
 
-✔️ Reduces pricing uncertainty  
-✔️ Improves decision-making  
-✔️ Enables automated valuation systems  
+Más importante que la métrica final, este proyecto me permitió entender:
+
+- qué variables realmente aportan valor
+- cómo se comportan distintos modelos
+- dónde aparecen problemas como overfitting
 
 ---
 
-##  Final Result
+## Problemas encontrados
 
-- Predicts vehicle prices in real time  
-- Handles structured data inputs  
-- Provides model interpretability (feature importance)  
-- Fully deployed and accessible via web  
+- Overfitting en modelos más complejos
+- Variables categóricas con alta cardinalidad
+- Ruido en el dataset
+
+## Mejoras futuras
+
+- Feature engineering más profundo
+- Probar modelos como XGBoost o LightGBM
+- Mejor validación del modelo
 
 ---
 
@@ -125,4 +130,4 @@ streamlit run app.py
  Author
 
 Luis Enrique Camargo    |   
-Data Scientist | Machine Learning Engineer
+Data Scientist | Applied Machine Learning
