@@ -143,7 +143,8 @@ streamlit run app.py
 
 ---
 
- Author
+Author
 
-Luis Enrique Camargo  
-Data Scientist | Applied Machine Learning | Python
+Luis Enrique Camargo Rangel  
+Data Scientist Jr. | Machine Learning | Python | SQL  
+GitHub: https://github.com/camargoluisenrique
